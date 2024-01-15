@@ -1027,7 +1027,8 @@ Codificação de Características: Utilização de codificação one-hot para tr
 Modelo Utilizado: XGBoost (Extreme Gradient Boosting).<br />
 Ajuste de Hiperparâmetros:<br />
 Implementação de uma função para ajuste de hiperparâmetros (hipertunnig) usando validação cruzada (Cross-validation). Vale destacar que o SMOTE foi aplicado dentro de cada segmentação de dados da etapa da validação cruzada. <br />
-Técnicas de otimização: hyperopt e skopt.<br /></p>
+Técnicas de otimização: hyperopt e skopt.<br />
+Treinamento do modelo com melhores parâmetros.<br /></p>
 <div class="admonition info">
 <p class="admonition-title">SMOTE (Synthetic Minority Over-sampling Technique)</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Desequilíbrio de Classes</label><label for="__tabbed_1_2">O Que é?</label><label for="__tabbed_1_3">Como Funciona?</label><label for="__tabbed_1_4">Aplicações</label><label for="__tabbed_1_5">Benefícios e Limitações</label></div>
@@ -1052,9 +1053,30 @@ Técnicas de otimização: hyperopt e skopt.<br /></p>
 </div>
 </div>
 </div>
-<p>5 - Avaliação do Modelo<br />
-Métricas de Avaliação:<br />
-Acurácia, F1-Score, Matriz de Confusão, ROC-AUC, Recall, Precisão, Log Loss, Average Precision Score. Curvas ROC e Precision-Recall.<br /></p>
+<p>5 - Avaliação do Modelo<br /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>É importante destacar que nem todas as métricas empregadas nesta análise são as mais apropriadas para contextos onde a variável dependente é desbalanceada. Estas métricas foram selecionadas principalmente com o objetivo de aprendizado, e cada uma delas merece uma exploração mais detalhada e até postagens separadas.<br /></p>
+</div>
+<p>Métricas de Avaliação:<br />
+- Acurácia <br />
+- F1-Score <br />
+- Matriz de Confusão <br />
+- ROC-AUC <br />
+- Recall <br />
+- Precisão <br />
+- Log Loss <br />
+- Average Precision Score <br />
+- Curva ROC <br />
+- Curva Precision-Recall<br /></p>
+<div class="admonition info">
+<p class="admonition-title">Outras métricas para valiação de modelos de classificação</p>
+<p><img alt="☑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2611.svg" title=":ballot_box_with_check:" /> &nbsp; <strong>Kappa de Cohen (Cohen's Kappa)</strong>;<br />
+<img alt="☑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2611.svg" title=":ballot_box_with_check:" /> &nbsp; <strong>F-Score Balanceado</strong>;<br />
+<img alt="☑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2611.svg" title=":ballot_box_with_check:" /> &nbsp; <strong>Matthews Correlation Coefficient (MCC)</strong>;<br />
+<img alt="☑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2611.svg" title=":ballot_box_with_check:" /> &nbsp; <strong>Taxa de Falsos Positivos (False Positive Rate)</strong>;<br />
+<img alt="☑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2611.svg" title=":ballot_box_with_check:" /> &nbsp; <strong>Taxa de Falsos Negativos (False Negative Rate)</strong>;<br /></p>
+</div>
 <p>6 - Salvamento e Carregamento de Modelos<br />
 Funções para salvar e carregar modelos usando a biblioteca pickle.<br /></p>
 

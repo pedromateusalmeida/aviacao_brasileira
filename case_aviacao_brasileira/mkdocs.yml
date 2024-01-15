@@ -1,0 +1,152 @@
+# Informações do Projeto
+site_name: Case Pontualidade da Aviação Brasileira
+#site_url: 
+site_author: linkedin.com/in/pedro-mateus-almeida-br
+site_description: Documentação simplificada
+
+# Repositorio Git
+repo_name: Pedro Mateus Almeida
+repo_url: https://github.com/pedromateusalmeida
+edit_uri: "https://github.com/pedromateusalmeida"
+# Configuração
+theme:
+  name: material
+  language: pt-BR
+  copyright: false 
+  favicon: favicon.ico
+  icon:
+    logo: material/database-eye
+  features:
+   # - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+   # - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - navigation.tracking
+    - content.code.annotate
+    - content.code.copy 
+    - stylesheets/extra.css
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
+      primary: light blue
+      toggle:
+        icon: material/toggle-switch
+        name:  Modo claro
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      primary: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Modo escuro
+
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - md_in_html
+  - def_list
+  - abbr
+  - attr_list
+  - footnotes
+  - meta
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tilde
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - markdown.extensions.extra 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+        - overrides/.icons
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight: 
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite  
+  - pymdownx.snippets  
+  - pymdownx.superfences  
+
+extra_css:
+  - 'lightbox.css' 
+
+extra_javascript:
+  - 'lightbox.js' 
+
+# Árvore de páginas
+nav:
+
+  - Seja Bem Vindo: index.md
+  - Sobre o Case: case.md
+  - Objetivo(s) do Case: objetivos.md
+  - Justificativa: justificativa.md
+  - Metodologia de trabalho: metodologia.md
+  - Extração dos dados: extracao.md
+  - Tratamento dos dados: tratamento.md
+  - Análise Exploratória: analise_exploratoria.md
+  - Feature Selection:
+    - Importância da etapa de feature selection: importancia_feature_selection.md  
+    - Testes parametricos e não parametricos:
+      - O que é?: oque_e.md
+      - ANOVA: anova.md
+      - Kruskal-Wallis: kruskal_wallism.md
+      - Teste de Chi-Quadrado: chi_quadrado.md
+      - Teste Exato de Fisher: fisher.md
+    - Técnicas de algoritmo+estatística:
+      - Recursive Feature Elimination (RFE): rfe.md
+      - SelectFromModel (SFM): sfm.md
+      - Análise de Componentes Principais (PCA): pca.md
+      - Importância de Permutação: permutation_imp.md
+      - Correlação: correlacao.md
+      - Shap: shap.md
+      - Importância Baseada em Modelo: imp_bas_model.md
+      - PPScore: ppscore.md
+  - Treinamento do modelo: treinamento_modelo.md
+  - Análise da Performance do Modelo: analise_performance_modelo.md
+  - Ferramentas/Versionamento: ferramentas_versionamento.md
+  - Referência Bibliográfica: referencia_bibliografica.md
+
+
+
+
+# Configuração do Favicon e Cookie Consent
+extra:
+    favicon: 'favicon.ico'
+    version:
+      provider: mike
+    consent:
+      title: Consentimento de cookies
+      description: >- 
+        Usamos cookies para reconhecer suas visitas repetidas e preferências, 
+        bem como para medir a eficácia de nossa documentação e se os usuários 
+        encontram o que estão procurando. Com o seu consentimento, você 
+        nos ajuda a melhorar nossa documentação.
+    social:
+      - icon: fontawesome/brands/linkedin
+        link: https://www.linkedin.com/in/pedro-mateus-almeida-br
+      - icon: fontawesome/brands/github
+        link: https://www.github.com/pedromateusalmeida
+      - icon: fontawesome/brands/instagram
+        link: https://www.instagram.com/pedro_mateus_almeida/
+    generator: false

@@ -1,0 +1,15 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - /bin/bash -c "pip3 install -U mkdocs mkdocs-material mkdocs-material-extensions --user --no-cache-dir"
+    build:
+      commands:
+        - /bin/bash -c "mkdocs build"
+  artifacts:
+    baseDirectory: site
+    files:
+      - '**/*'
+  cache:
+    paths: []

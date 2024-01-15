@@ -77,11 +77,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#em-desenvolvimento" class="md-skip">
-          Pular para conteúdo
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -390,17 +385,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Análise Exploratória
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -410,32 +394,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#em-desenvolvimento" class="md-nav__link">
-    <span class="md-ellipsis">
-      Em desenvolvimento
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -529,7 +487,7 @@
             
   
   <span class="md-ellipsis">
-    Testes parametricos e não parametricos
+    Testes paramétricos e não paramétricos
   </span>
   
 
@@ -539,7 +497,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_2">
             <span class="md-nav__icon md-icon"></span>
-            Testes parametricos e não parametricos
+            Testes paramétricos e não paramétricos
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -811,7 +769,7 @@
         
   
   <span class="md-ellipsis">
-    Shap
+    SHAP (SHapley Additive exPlanations)
   </span>
   
 
@@ -976,23 +934,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#em-desenvolvimento" class="md-nav__link">
-    <span class="md-ellipsis">
-      Em desenvolvimento
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1011,37 +952,44 @@
 
   <h1>Análise Exploratória</h1>
 
-<h2 id="em-desenvolvimento">Em desenvolvimento</h2>
+<p>Como destacado inicialmente, este estudo se concentra em três companhias aéreas principais - Azul, Gol e Latam - que realizam a maioria dos voos domésticos no Brasil. O primeiro gráfico que gostaria de destacar é o da frequência anual de voos dessas companhias. É importante notar a redução drástica ocorrida em 2020 e 2021 devido à pandemia. <br /></p>
 <p><br /></p>
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~mateusmoraesalmeida/85.embed"></iframe>
 <p><br /></p>
-<p><br /></p>
+<p>O próximo gráfico ilustra a quantidade de voos atrasados por ano. Essa é a variável que pretendemos prever, e é crucial salientar seu desequilíbrio, exigindo o uso de técnicas como SMOTE para balanceamento. <br />
+<br /></p>
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~mateusmoraesalmeida/87.embed"></iframe>
 <p><br /></p>
-<p><br /></p>
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~mateusmoraesalmeida/89.embed"></iframe>
-<p><br /></p>
-<p><br /></p>
+<p>Analisando o volume de voos atrasados, observamos que a TAM teve o menor volume nos últimos cinco anos. No entanto, isso não implica necessariamente a maior pontualidade.<br />
+<br /></p>
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~mateusmoraesalmeida/91.embed"></iframe>
 <p><br /></p>
-<p><br /></p>
-<iframe width="900" height="800" src="//plotly.com/~mateusmoraesalmeida/96.embed"></iframe>
-<p><br /></p>
+<p>O indicador de pontualidade é calculado: 1−voos atrasados/voos realizados, mostra que a TAM avançou de terceiro para primeiro lugar entre 2019 e 2021 em termos de pontualidade (considerando as três empresas do estudo). A Gol, por outro lado, permaneceu em terceiro lugar desde 2019, com um indicador médio de 0,85.</p>
 <p><br /></p>
 <iframe width="900" height="800" src="//plotly.com/~mateusmoraesalmeida/93.embed"></iframe>
 <p><br /></p>
+<p>A análise mensal do indicador de pontualidade revela uma queda significativa durante os meses de férias - novembro, dezembro e janeiro - especialmente para as empresas GOL e TAM, com índices chegando a 0,70 e 0,73, respectivamente. A Azul se destaca por não ter registrado nenhum mês com indicador abaixo de 0,80, ao contrário da GOL, que teve 15 meses com indicadores inferiores nesse intervalo.<br /></p>
+<p><br /></p>
+<iframe width="900" height="800" src="//plotly.com/~mateusmoraesalmeida/96.embed"></iframe>
+<p><br /></p>
+<p>Além disso, o indicador de pontualidade pode ser usado para avaliar a pontualidade dos aeroportos no Brasil. O primeiro gráfico, um boxplot, ajuda a entender a distribuição dos valores de pontualidade nos aeroportos, com a maioria apresentando indicadores entre 0,87 e 0,91. <br /></p>
 <p><br /></p>
 <iframe width="900" height="800" src="//plotly.com/~mateusmoraesalmeida/98.embed"></iframe>
 <p><br /></p>
-<p><br /></p>
-<iframe width="900" height="800"  src="//plotly.com/~mateusmoraesalmeida/100.embed"></iframe>
-<p><br /></p>
-<p><br /></p>
+<p>Por fim, gostaria de apresentar alguns gráficos de dados meteorológicos que são relevantes para a análise.<br />
+<br /></p>
 <iframe width="900" height="800"  src="//plotly.com/~mateusmoraesalmeida/100.embed"></iframe>
 <p><br /></p>
 <p><br /></p>
 <iframe width="900" height="800"  src="//plotly.com/~mateusmoraesalmeida/102.embed"></iframe>
 <p><br /></p>
+<p>O último gráfico mostra os resultados meteorológicos agrupados pelo status do voo (Pontual ou Atrasado). Apesar de haver diferenças sutis entre os voos que atrasaram e os que foram pontuais, os boxplots indicam que os dados meteorológicos podem não ser decisivos para melhorar a qualidade preditiva do modelo.<br /></p>
+<p><center>
+<a href="../dados_meteorologia.png?data-lightbox=" title="image-1&quot; data-title=&quot;My caption"><img alt="Image title" src="../dados_meteorologia.png" /></a>
+</center></p>
+<p><br /></p>
+<p><a class="md-button md-button--primary" href="https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/3_analise_exploratoria_pyspark.ipynb">Para mais gráficos da análise acesse (plotly)</a></p>
+<p><a class="md-button md-button--primary" href="https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/3_2_analise_exploratoria.ipynb">Para mais gráficos da análise acesse (seaborn)</a></p>
 
 
 

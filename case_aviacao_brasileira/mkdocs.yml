@@ -5,9 +5,9 @@ site_author: linkedin.com/in/pedro-mateus-almeida-br
 site_description: Documentação simplificada
 
 # Repositorio Git
-repo_name: Pedro Mateus Almeida
-repo_url: https://github.com/pedromateusalmeida
-edit_uri: "https://github.com/pedromateusalmeida"
+repo_name: Repositório do Projeto
+repo_url: https://github.com/pedromateusalmeida/aviacao_brasileira
+edit_uri: "https://github.com/pedromateusalmeida/aviacao_brasileira"
 # Configuração
 theme:
   name: material

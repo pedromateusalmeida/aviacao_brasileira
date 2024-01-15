@@ -45,7 +45,6 @@
         :ballot_box_with_check: &nbsp; **Correlação de Pearson**;<br />
         :ballot_box_with_check: &nbsp; **Missingno**;<br />
         :ballot_box_with_check: &nbsp; **Seaborn**;<br />
-        :ballot_box_with_check: &nbsp; **Plotly (chart studio)**;<br />
 
     === "Feature Selection"
         :ballot_box_with_check: &nbsp; **Chi-Quadrado**;<br />

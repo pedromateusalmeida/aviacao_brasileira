@@ -1,3 +1,5 @@
+!!!warning
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ## O que é Importância de Permutação?
 A Importância de Permutação é uma técnica de interpretabilidade de modelo que mede a importância de uma característica pela observação de como a pontuação do modelo de predição diminui quando os dados da característica são embaralhados aleatoriamente. Este processo quebra a relação entre a característica e a verdadeira saída, indicando o quanto o modelo depende da característica.<br />
 ## Como Funciona

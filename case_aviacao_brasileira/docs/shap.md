@@ -1,4 +1,5 @@
-##SHAP (SHapley Additive exPlanations)
+!!!warning
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ## O que é SHAP?
 SHAP é uma abordagem de interpretação de modelo baseada na teoria dos jogos que atribui a cada característica um valor que representa sua importância na previsão de cada instância. Os valores SHAP são baseados nos valores de Shapley, um conceito da teoria dos jogos cooperativos que distribui a "recompensa" (ou seja, a previsão do modelo) entre os colaboradores (recursos) de forma justa.<br />
 ## Como Funciona

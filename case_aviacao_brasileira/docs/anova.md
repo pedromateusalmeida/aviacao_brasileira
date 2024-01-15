@@ -1,4 +1,6 @@
 ## O que é ANOVA?
+!!!warning
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 <div style="text-align: justify">
 ANOVA (Análise de Variância) é uma técnica estatística usada para comparar as médias de duas ou mais amostras independentes, determinando se existe uma diferença significativa entre elas. Em termos de seleção de recursos, ANOVA pode ser usada para avaliar se a média de uma variável numérica é significativamente diferente entre diferentes categorias de uma variável categórica.<br />
 </div>

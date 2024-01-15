@@ -1,4 +1,6 @@
 ## PPScore (Predictive Power Score)
+!!!warning
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ### O que é PPScore?
 O Predictive Power Score (PPScore) é uma métrica alternativa à correlação que quantifica a relação entre duas variáveis, levando em conta não apenas relações lineares, mas também padrões mais complexos. Ele pode ser usado para identificar relações unidirecionais e não lineares entre duas variáveis.<br />
 ### Como Funciona

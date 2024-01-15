@@ -1,4 +1,6 @@
 ## Teste de Chi-Quadrado (χ²)
+!!!warning
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ## O que é Teste de Chi-Quadrado?
 O teste de Chi-Quadrado é uma técnica estatística usada para determinar se existe uma associação significativa entre duas variáveis categóricas. É frequentemente usado na seleção de recursos para identificar quais características são relevantes para a variável alvo.<br />
 ## Como Funciona

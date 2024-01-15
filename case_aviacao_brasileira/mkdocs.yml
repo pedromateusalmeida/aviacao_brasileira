@@ -106,7 +106,7 @@ nav:
   - Análise Exploratória: analise_exploratoria.md
   - Feature Selection:
     - Importância da etapa de feature selection: importancia_feature_selection.md  
-    - Testes parametricos e não parametricos:
+    - Testes paramétricos e não paramétricos :
       - O que é?: oque_e.md
       - ANOVA: anova.md
       - Kruskal-Wallis: kruskal_wallism.md
@@ -118,7 +118,7 @@ nav:
       - Análise de Componentes Principais (PCA): pca.md
       - Importância de Permutação: permutation_imp.md
       - Correlação: correlacao.md
-      - Shap: shap.md
+      - SHAP (SHapley Additive exPlanations): shap.md
       - Importância Baseada em Modelo: imp_bas_model.md
       - PPScore: ppscore.md
   - Treinamento do modelo: treinamento_modelo.md

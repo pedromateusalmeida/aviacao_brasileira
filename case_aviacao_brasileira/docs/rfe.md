@@ -1,4 +1,6 @@
 
+!!!warning
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ## O que é RFE?
 Recursive Feature Elimination (RFE) é uma técnica de seleção de recursos utilizada para identificar quais variáveis contribuem mais para a previsão da variável de interesse. O processo do RFE envolve a construção de um modelo e a remoção das características menos importantes de forma iterativa, até que o número desejado de características seja alcançado.
 ## Como Funciona

@@ -27,7 +27,7 @@ Nesta documentação, detalhamos as operações realizadas no script para carreg
 •	O DataFrame final é salvo em um arquivo CSV para uso posterior.<br />
 </div>
 
-[Script com o tratamento dos dados de voos](){ .md-button .md-button--primary }
+[Script com o tratamento dos dados de voos](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/2_2_tratamento_dados.ipynb){ .md-button .md-button--primary }
 
 
 ## Documentação do Processo de Tratamento de Dados Meteorológicos
@@ -57,7 +57,7 @@ Os dados são agrupados por certas colunas-chave (data, hora, estação etc.) e 
 Os DataFrames tratados são salvos em formatos específicos (como Parquet e CSV) para uso posterior.<br />
 </div>
 
-[Script com o tratamento dos dados de meteorológicos](){ .md-button .md-button--primary }
+[Script com o tratamento dos dados de meteorológicos](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/2_1_tratamento_dados_meterologicos.ipynb){ .md-button .md-button--primary }
 
 
 ## Documentação do Processo de Tratamento e Análise de Dados de Voos com PySpark
@@ -80,4 +80,4 @@ O DataFrame resultante é limpo para remover duplicatas e é reparticionado para
 Finalmente, os dados combinados e tratados são salvos em um arquivo CSV para análises futuras.<br />
 </div>
 
-[Script de unificação dos dados meteorológicos + voos](){ .md-button .md-button--primary }
+[Script de unificação dos dados meteorológicos + voos](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/2_4_tratamento_voos_meteorologia.ipynb){ .md-button .md-button--primary }

@@ -1,3 +1,5 @@
+!!!warning
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ## O que é PCA?
 A Análise de Componentes Principais (PCA) é uma técnica de redução de dimensionalidade que transforma os dados originais em um novo conjunto de variáveis, denominadas componentes principais. Estas componentes são obtidas de forma que a primeira capture a maior variação possível nos dados, e cada componente subsequente tenha a maior variação possível sob a restrição de ser ortogonal às componentes anteriores.<br />
 ## Como Funciona

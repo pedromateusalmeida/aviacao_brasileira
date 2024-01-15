@@ -27,5 +27,5 @@ Essas funções, em conjunto, formam a espinha dorsal do processo de extração 
 </div>
 
 <center>
-[Repositório com as funções](){ .md-button .md-button--primary }
+[Repositório com as funções](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/1_extracao_dados.ipynb){ .md-button .md-button--primary }
 <center>

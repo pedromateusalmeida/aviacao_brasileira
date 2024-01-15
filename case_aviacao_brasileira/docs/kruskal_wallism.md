@@ -1,3 +1,6 @@
+!!!warning
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
+
 O Teste de Kruskal-Wallis é um método não paramétrico usado para determinar se há diferenças estatisticamente significativas entre as medianas de dois ou mais grupos independentes. É uma alternativa ao teste ANOVA quando as suposições deste último não são satisfeitas. <br />
 
 ## O que Observar no Teste de Kruskal-Wallis

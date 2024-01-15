@@ -1,3 +1,5 @@
+!!!warning
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ## O que é SelectFromModel?
 SelectFromModel é uma técnica de seleção de recursos que utiliza os pesos de importância atribuídos aos recursos por um modelo treinado. É comumente usada com modelos que atribuem importância aos recursos, como árvores de decisão e modelos lineares regularizados. Essa técnica seleciona os recursos com importâncias (ou coeficientes) maiores do que o valor de limiar especificado.<br />
 ## Como Funciona

@@ -1,4 +1,6 @@
 ## Testes Paramétricos
+!!!warning
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ### O que são?<br /><br />
 Testes paramétricos são métodos estatísticos que assumem uma distribuição específica dos dados, geralmente a distribuição normal. Eles também pressupõem outras condições, como homogeneidade de variâncias e a relação linear entre variáveis.<br />
 ### Características Principais<br /><br />

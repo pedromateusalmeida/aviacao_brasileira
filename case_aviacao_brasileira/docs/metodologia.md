@@ -1,7 +1,7 @@
 ## Metodologia de Trabalho
 
 <center>
-![Image title](metodologia.png)
+[![Image title](metodologia.png)](metodologia.png?data-lightbox="image-1" data-title="My caption")
 </center>
 
 <div style="text-align: justify"><br />
@@ -10,7 +10,7 @@ Quando lido com um problema gosto de resolve-lo colocando em uma “esteira”. 
 Após dar contexto ao problema e entendê-lo melhor é a fase de pesquisar sobre o assunto, buscar por informações, notícias, artigos científicos e outros dados que possam contribuir o entendimento ou resolução do problema. Após essa etapa faço levantamento de potenciais hipóteses para o problema e possíveis soluções. Abaixo uma imagem que ilustra essas primeiras etapas: <br /></div>
 
 <center>
-![Image title](metod_1.png)
+[![Image title](metod_1.png)](metod_1.png?data-lightbox="image-1" data-title="My caption")
 <br /> Fig: Fluxograma da metodologia de trabalho utilizada no case
 </center>
 
@@ -21,7 +21,7 @@ Criar um repositório em uma ferramenta de versionamento para armazenar o progre
 <br />
 Localizado os dados é o momento de extrair e depois tratar os dados. A etapa de tratamento é crucial para garantir qualidade nos dados que serão utilizados na análise e/ou no treinamento do modelo. Nessa etapa também identificamos as informações que demandarão tratamento continuo e precisarão ser disponibilizadas na feature store. Abaixo uma imagem que ilustra essas etapas.<br /></div>
 <center>
-![Image title](metod_2.png)
+[![Image title](metod_2.png)](metod_2.png?data-lightbox="image-1" data-title="My caption")
 <br /> Fig: Fluxograma da metodologia de trabalho utilizada no case
 </center>
 <div style="text-align: justify"><br />
@@ -30,7 +30,7 @@ A próxima fase seria a análise exploratória, nela realizamos diversas anális
 O problema evoluindo para uma resolução que utiliza um modelo de aprendizado de máquina, nós vamos evoluir para próxima etapa a de feature selection. Nesse momento aplicamos diversas técnicas que nos auxilia na escolha das melhores variáveis para o modelo e é o momento de aplicar técnicas de redução de dimensionalidade para sintetizar uma dimensão, ou então criar um índice que represente uma determinada característica.  Abaixo uma imagem que representa esse fluxo<br /></div>
 
 <center>
-![Image title](metod_3.png)
+[![Image title](metod_3.png)](metod_3.png?data-lightbox="image-1" data-title="My caption")
 <br /> Fig: Fluxograma da metodologia de trabalho utilizada no case
 </center>
 <div style="text-align: justify"><br />
@@ -40,7 +40,7 @@ Após o desenvolvimento do modelo, análise de performance e apresentação para
 <br />
 Tanto se o modelo for para produção, quanto se ele não for será necessário criar uma documentação para ele. Se for para produção seria importante já elaborar algumas métricas que ajudem a medir o sucesso do modelo e sua performance, documentar o ambiente necessário para o modelo funcionar.  Essas informações serão necessárias para o engenheiro de MLops para colocar em produção o modelo. Abaixo uma imagem que ilustra essas etapas <br /></div>
 <center>
-![Image title](metod_4.png)
+[![Image title](metod_4.png)](metod_4.png?data-lightbox="image-1" data-title="My caption")
 <br /> Fig: Fluxograma da metodologia de trabalho utilizada no case
 </center>
 <br />

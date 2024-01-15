@@ -1,4 +1,6 @@
 ## Teste Exato de Fisher
+!!!warning
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ## O que é o Teste Exato de Fisher?
 O Teste Exato de Fisher é uma técnica estatística usada para determinar se há associações significativas entre duas variáveis categóricas em tabelas de contingência, especialmente útil para amostras de tamanho pequeno. Diferente do teste de Chi-Quadrado, o Teste de Fisher não depende de uma distribuição de amostragem aproximada e é exato.<br />
 ## Como Funciona

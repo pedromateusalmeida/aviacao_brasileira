@@ -1,6 +1,6 @@
 ## Técnicas de seleção de variaveis
 !!!warning
-    Cada técnica utilizada carece de uma postagem individual, inclusive pretendo fazer gradualmente. Meu objetivo aqui vai ser passar pelas técnicas de forma rápida. O conteúdo foi produzido em conjunto com o Chatgpt. O conteúdo foi produzido a partir de links, pdfs e anotações que tenho relacionada a cada tematica. 
+    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 
 A seleção de recursos, um passo crucial na preparação de dados para modelos de machine learning, envolve identificar as características mais relevantes para a previsão ou classificação em um conjunto de dados. Este processo não é apenas uma tarefa técnica, mas também uma oportunidade para o cientista de dados aplicar e demonstrar conhecimento estatístico e compreensão algorítmica profunda.<br /><br />
 ## Por Que a Seleção de Recursos é Crucial?

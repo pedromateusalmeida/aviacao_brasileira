@@ -717,69 +717,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#aplicabilidade" class="md-nav__link">
+  <a href="#interpretacao" class="md-nav__link">
     <span class="md-ellipsis">
-      Aplicabilidade
+      Interpretação
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pros-e-contras" class="md-nav__link">
+  <a href="#referencias" class="md-nav__link">
     <span class="md-ellipsis">
-      Prós e Contras
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prós e Contras">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pros" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prós
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contras" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contras
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interpretacao-e-cuidados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interpretação e Cuidados
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cuidados-ao-utilizar-rfe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cuidados ao utilizar RFE:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#informacoes-adicionais" class="md-nav__link">
-    <span class="md-ellipsis">
-      Informações Adicionais
+      Referências
     </span>
   </a>
   
@@ -1079,69 +1028,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#aplicabilidade" class="md-nav__link">
+  <a href="#interpretacao" class="md-nav__link">
     <span class="md-ellipsis">
-      Aplicabilidade
+      Interpretação
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pros-e-contras" class="md-nav__link">
+  <a href="#referencias" class="md-nav__link">
     <span class="md-ellipsis">
-      Prós e Contras
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prós e Contras">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pros" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prós
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contras" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contras
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interpretacao-e-cuidados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interpretação e Cuidados
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cuidados-ao-utilizar-rfe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cuidados ao utilizar RFE:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#informacoes-adicionais" class="md-nav__link">
-    <span class="md-ellipsis">
-      Informações Adicionais
+      Referências
     </span>
   </a>
   
@@ -1167,50 +1065,66 @@
 
   <h1>Recursive Feature Elimination (RFE)</h1>
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. </p>
-</div>
 <h2 id="o-que-e-rfe">O que é RFE?</h2>
-<p>Recursive Feature Elimination (RFE) é uma técnica de seleção de recursos utilizada para identificar quais variáveis contribuem mais para a previsão da variável de interesse. O processo do RFE envolve a construção de um modelo e a remoção das características menos importantes de forma iterativa, até que o número desejado de características seja alcançado.</p>
+<div style="text-align: justify">
+Recursive Feature Elimination (RFE) é uma técnica de seleção de recursos utilizada para identificar quais variáveis contribuem mais para a previsão da variável de interesse. O processo do RFE envolve a construção de um modelo e a remoção das características menos importantes de forma iterativa, até que o número desejado de características seja alcançado.
+</div>
 <h2 id="como-funciona">Como Funciona</h2>
-<p>O RFE realiza os seguintes passos:<br />
+<div style="text-align: justify">
+O RFE realiza os seguintes passos:<br />
 1.  Treina um modelo utilizando o conjunto inteiro de características.<br />
 2.  Avalia a importância de cada característica.<br />
 3.  Remove a característica menos importante.<br />
 4.  Refaz o modelo com as características restantes.<br />
-5.  Repete os passos 2 a 4 até que o número desejado de características seja atingido.<br /></p>
-<h2 id="aplicabilidade">Aplicabilidade</h2>
-<p>O RFE é aplicável quando:<br />
-•   Temos um grande número de variáveis e queremos reduzir a dimensionalidade.<br />
-•   Precisamos de um modelo simplificado para melhor interpretabilidade.<br />
-•   Queremos evitar o overfitting reduzindo a complexidade do modelo.<br /></p>
-<h2 id="pros-e-contras">Prós e Contras</h2>
-<h3 id="pros">Prós</h3>
-<p>•   Facilita a interpretação do modelo ao reduzir o número de variáveis.<br />
-•   Pode melhorar<br />
-o desempenho do modelo ao remover características ruidosas ou irrelevantes.
-•   Ajuda a mitigar o overfitting e a melhoria da generalização do modelo para dados não vistos.<br /></p>
-<h3 id="contras">Contras</h3>
-<p>•   Pode ser computacionalmente intensivo, principalmente com um grande número de características.<br />
-•   A escolha de recursos é feita com base no modelo escolhido para o RFE, o que significa que a seleção é específica para esse modelo e pode não ser ideal para outros modelos.<br />
-•   A remoção de recursos é um processo irreversível para o modelo específico e pode descartar características que poderiam ser úteis em combinações diferentes ou sob uma perspectiva diferente.<br /></p>
-<h2 id="interpretacao-e-cuidados">Interpretação e Cuidados</h2>
-<p>Ao interpretar os resultados do RFE, é essencial considerar o seguinte:
-•   A importância das características está relacionada ao modelo específico utilizado para o RFE.<br />
-•   Características removidas cedo no processo são geralmente menos importantes, mas isso pode variar com a mudança do modelo ou dos hiperparâmetros.<br />
-•   Sempre valide a performance do modelo após a seleção de recursos para garantir que a redução não afetou negativamente a capacidade preditiva.<br /></p>
-<h2 id="cuidados-ao-utilizar-rfe">Cuidados ao utilizar RFE:</h2>
+5.  Repete os passos 2 a 4 até que o número desejado de características seja atingido.<br /><br />
+
+Alguns destaque merece ser feito sobre o RFE, ele é um algoritmo que pode ser computacionalmente intensivo, principalmente com um grande número de características. A escolha de recursos é feita com base no modelo escolhido para o RFE, o que significa que a seleção é específica para esse modelo e pode não ser ideal para outros modelos.    A remoção de recursos é um processo irreversível para o modelo específico e pode descartar características que poderiam ser úteis em combinações diferentes ou sob uma perspectiva diferente.<br />
+
+Diversos modelos de machine learning são compativeis com o uso do RFE, ele pode ser utilizado com qualquer modelo que forneça alguma forma de importância de características, como árvores de decisão, modelos lineares regularizados, entre outros.<br />
+</div>
+
+<h2 id="interpretacao">Interpretação</h2>
+<div style="text-align: justify">
+Ao interpretar os resultados do RFE, é essencial considerar a importância das características está relacionada ao modelo específico utilizado para o RFE. Outro destaque é para as características removidas cedo no processo são geralmente menos importantes, mas isso pode variar com a mudança do modelo ou dos hiperparâmetros. 
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Sempre valide a performance do modelo após a seleção de recursos para garantir que a redução não afetou negativamente a capacidade preditiva.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Cuidados ao utilizar RFE</p>
 <p>•   Garanta que o modelo está bem ajustado antes de usar RFE, pois um modelo mal ajustado pode levar à remoção de características importantes.<br />
 •   Considere a correlação entre as características, pois o RFE não leva em conta a multicolinearidade.<br />
 •   A validação cruzada deve ser usada durante o RFE para garantir que a seleção de recursos seja robusta.<br /></p>
-<h2 id="informacoes-adicionais">Informações Adicionais</h2>
-<p>•   Modelos compatíveis: O RFE pode ser utilizado com qualquer modelo que forneça alguma forma de importância de características, como árvores de decisão, modelos lineares regularizados, entre outros.<br />
-•   Variações do RFE: Existem variações como o RFECV que inclui validação cruzada no processo de seleção de recursos para encontrar o número ótimo de características.<br /></p>
-<p><center>
-<a class="md-button md-button--primary" href="https://github.com/pedromateusalmeida/aviacao_brasileira">Repositório do Case</a>
-<center>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</div>
+<p><a class="md-button md-button--primary" href="https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/4_3_feature_selection.ipynb">Aplicação do RFE no Case</a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<h2 id="referencias">Referências</h2>
+<ul>
+<li>
+<p><a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html">Scikit-Learn - Documentação do RFE</a></p>
+</li>
+<li>
+<p><a href="https://k3ybladewielder.medium.com/sele%C3%A7%C3%A3o-de-features-com-recursive-feature-elimination-rfe-5effad69590b">Medium - Seleção de Features com Recursive Feature Elimination (RFE)</a></p>
+</li>
+<li>
+<p><a href="https://machinelearningmastery.com/rfe-feature-selection-in-python/">Machine Learning Mastery - RFE Feature Selection in Python</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/@evertongomede/recursive-feature-elimination-a-powerful-technique-for-feature-selection-in-machine-learning-89b3c2f3c26a">Medium - Recursive Feature Elimination: Uma Técnica Poderosa para Seleção de Recursos em Machine Learning</a></p>
+</li>
+<li>
+<p><a href="https://topepo.github.io/caret/recursive-feature-elimination.html">Caret - Recursive Feature Elimination</a></p>
+</li>
+<li>
+<p><a href="https://link.springer.com/article/10.1023/A:1012487302797">Springer - Artigo sobre RFE (Link Springer)</a></p>
+</li>
+<li>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S000437029700043X">ScienceDirect - Artigo sobre RFE (ScienceDirect)</a></p>
+</li>
+<li>
+<p><a href="https://www.simplilearn.com/recursive-feature-elimination-article">Simplilearn - Artigo sobre Recursive Feature Elimination</a></p>
+</li>
+</ul>
 
 
 

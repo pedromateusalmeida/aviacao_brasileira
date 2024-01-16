@@ -34,3 +34,18 @@ Testes não paramétricos não assumem uma distribuição específica dos dados.
 ## Conclusão<br /><br />
 A escolha entre um teste paramétrico e um não paramétrico depende da natureza dos seus dados e das suposições que você pode razoavelmente fazer sobre eles. Em geral, testes paramétricos têm maior poder estatístico e são preferíveis se suas suposições forem atendidas. No entanto, quando essas suposições são violadas, os testes não paramétricos oferecem uma alternativa valiosa e muitas vezes necessária.
 
+
+## Referências
+
+- [UFBA - Aula sobre Estatística Não Paramétrica (PDF)](https://est.ufba.br/sites/est.ufba.br/files/kim/matd49-aula01.pdf)<br />
+
+- [UFMG - Relatório Técnico sobre Estatística Não Paramétrica (PDF)](https://www.est.ufmg.br/portal/wp-content/uploads/2023/01/RTE_02_2018.pdf)<br />
+
+- [Wikipedia - Estatística Não Paramétrica](https://pt.wikipedia.org/wiki/Estat%C3%ADstica_n%C3%A3o_param%C3%A9trica#M%C3%A9todos)<br />
+
+- [UFPR - Resumo sobre Estatística Não Paramétrica (PDF)](https://docs.ufpr.br/~vayego/pedeefes/resumo_12.pdf)<br />
+
+- [FGV - Teste dos Sinais, Wilcoxon e Mann-Whitney (PDF)](https://epge.fgv.br/we/Graduacao/Estatistica1/2009/2?action=AttachFile&do=get&target=teste-dos-sinais-wilcoxon-e-mann-whitney.pdf)<br />
+
+- [Minitab Blog - Como escolher entre um teste não paramétrico e um teste paramétrico](https://blog.minitab.com/pt/como-escolher-entre-um-teste-nao-parametrico-e-um-teste-parametrico)<br />
+

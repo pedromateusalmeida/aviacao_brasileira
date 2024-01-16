@@ -43,7 +43,7 @@ Por fim, gostaria de apresentar alguns gráficos de dados meteorológicos que s�
 <iframe width="900" height="800"  src="//plotly.com/~mateusmoraesalmeida/102.embed"></iframe>
 <br />
 
-O último gráfico mostra os resultados meteorológicos agrupados pelo status do voo (Pontual ou Atrasado). Apesar de haver diferenças sutis entre os voos que atrasaram e os que foram pontuais, os boxplots indicam que os dados meteorológicos podem não ser decisivos para melhorar a qualidade preditiva do modelo.<br />
+O último gráfico mostra os resultados meteorológicos agrupados pelo status do voo (pontual ou atrasado). Apesar de haver diferenças sutis entre os voos que atrasaram e os que foram pontuais, os boxplots indicam que os dados meteorológicos podem não ser decisivos para melhorar a qualidade preditiva do modelo.<br />
 
 <center>
 [![Image title](dados_meteorologia.png)](dados_meteorologia.png?data-lightbox="image-1" data-title="My caption")

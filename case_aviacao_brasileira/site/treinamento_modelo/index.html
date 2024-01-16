@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#treinamento-de-modelo-de-machine-learning" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -484,7 +484,7 @@
             
   
   <span class="md-ellipsis">
-    Testes parametricos e não parametricos
+    Testes paramétricos e não paramétricos
   </span>
   
 
@@ -494,7 +494,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_2">
             <span class="md-nav__icon md-icon"></span>
-            Testes parametricos e não parametricos
+            Testes paramétricos e não paramétricos
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -766,7 +766,7 @@
         
   
   <span class="md-ellipsis">
-    Shap
+    SHAP (SHapley Additive exPlanations)
   </span>
   
 
@@ -846,8 +846,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -876,8 +874,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -886,18 +882,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#treinamento-de-modelo-de-machine-learning" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
+      Treinamento de Modelo de Machine Learning
     </span>
   </a>
   
@@ -988,8 +975,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -998,18 +983,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#treinamento-de-modelo-de-machine-learning" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
+      Treinamento de Modelo de Machine Learning
     </span>
   </a>
   
@@ -1033,21 +1009,76 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<div class="language-text highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+  <h1>Treinamento do modelo</h1>
+
+<h2 id="treinamento-de-modelo-de-machine-learning">Treinamento de Modelo de Machine Learning</h2>
+<p>1-  Configuração do Ambiente
+Bibliotecas Importadas:<br />
+Manipulação de dados: pandas, numpy.<br />
+Visualização de dados: seaborn, matplotlib.pyplot, scikitplot.<br />
+Machine Learning (Pré-processamento e métricas): scikit-learn, imblearn, xgboost, shap, hyperopt.<br />
+Outras utilidades: pickle, os, re, datetime, pytz.<br /></p>
+<p>2 - Preparação dos Dados<br />
+Leitura de Dados: O script carrega um conjunto de dados de um arquivo CSV para um DataFrame do pandas.<br />
+Seleção das colunas que vão participar do treinamento.<br /></p>
+<p>3 - Pré-processamento de Dados<br />
+Codificação de Características: Utilização de codificação one-hot para transformar características categóricas.<br /></p>
+<p>4 - Modelagem<br />
+Modelo Utilizado: XGBoost (Extreme Gradient Boosting).<br />
+Ajuste de Hiperparâmetros:<br />
+Implementação de uma função para ajuste de hiperparâmetros (hipertunnig) usando validação cruzada (Cross-validation). Vale destacar que o SMOTE foi aplicado dentro de cada segmentação de dados da etapa da validação cruzada. <br />
+Técnicas de otimização: hyperopt e skopt.<br />
+Treinamento do modelo com melhores parâmetros.<br /></p>
+<div class="admonition info">
+<p class="admonition-title">SMOTE (Synthetic Minority Over-sampling Technique)</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Desequilíbrio de Classes</label><label for="__tabbed_1_2">O Que é?</label><label for="__tabbed_1_3">Como Funciona?</label><label for="__tabbed_1_4">Aplicações</label><label for="__tabbed_1_5">Benefícios e Limitações</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>No mundo da ciência de dados e aprendizado de máquina, o desequilíbrio de classes em conjuntos de dados é um desafio comum, especialmente em cenários de classificação. O SMOTE (Synthetic Minority Over-sampling Technique) emergiu como uma técnica inovadora para abordar esse problema, ajudando a melhorar a precisão e eficácia dos modelos preditivos.<br /></p>
+<p>O desequilíbrio de classes ocorre quando as observações em diferentes classes não estão igualmente representadas. Por exemplo, em um conjunto de dados de detecção de fraude, as transações fraudulentas são muito menos comuns do que as transações legítimas. Esse desequilíbrio pode levar a modelos que favorecem a classe majoritária, resultando em uma identificação inadequada da classe minoritária.<br /></p>
+</div>
+<div class="tabbed-block">
+<p>SMOTE é uma técnica de processamento de dados usada para equilibrar conjuntos de dados desbalanceados através do aumento do número de exemplos na classe minoritária. Diferentemente do simples oversampling, que apenas replica exemplos existentes, o SMOTE cria exemplos sintéticos.<br /></p>
+</div>
+<div class="tabbed-block">
+<p>O processo do SMOTE envolve a seleção aleatória de um ponto da classe minoritária e a identificação de seus vizinhos mais próximos no conjunto de dados. Em seguida, ele gera novos exemplos sintéticos que são combinações lineares desses pontos e seus vizinhos. Isso ajuda a introduzir mais variedade dentro da classe minoritária, evitando o overfitting comum no oversampling tradicional.<br /></p>
+</div>
+<div class="tabbed-block">
+<p>SMOTE é particularmente útil em áreas como detecção de fraude, diagnóstico médico, e reconhecimento de padrões, onde a classe de interesse é significativamente menos representada.<br /></p>
+</div>
+<div class="tabbed-block">
+<p>Benefícios: O SMOTE melhora a representação da classe minoritária, contribuindo para modelos mais equilibrados e precisos.<br /></p>
+<p>Limitações: Pode gerar exemplos sintéticos que não representam bem a realidade se os dados originais já estiverem muito desequilibrados ou se tiverem muitos outliers.</p>
+</div>
+</div>
+</div>
+</div>
+<p>5 - Avaliação do Modelo<br /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>É importante destacar que nem todas as métricas empregadas nesta análise são as mais apropriadas para contextos onde a variável dependente é desbalanceada. Estas métricas foram selecionadas principalmente com o objetivo de aprendizado, e cada uma delas merece uma exploração mais detalhada e até postagens separadas.<br /></p>
+</div>
+<p>Métricas de Avaliação:<br />
+- Acurácia <br />
+- F1-Score <br />
+- Matriz de Confusão <br />
+- ROC-AUC <br />
+- Recall <br />
+- Precisão <br />
+- Log Loss <br />
+- Average Precision Score <br />
+- Curva ROC <br />
+- Curva Precision-Recall<br /></p>
+<div class="admonition info">
+<p class="admonition-title">Outras métricas para valiação de modelos de classificação</p>
+<p><img alt="☑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2611.svg" title=":ballot_box_with_check:" /> &nbsp; <strong>Kappa de Cohen (Cohen's Kappa)</strong>;<br />
+<img alt="☑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2611.svg" title=":ballot_box_with_check:" /> &nbsp; <strong>F-Score Balanceado</strong>;<br />
+<img alt="☑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2611.svg" title=":ballot_box_with_check:" /> &nbsp; <strong>Matthews Correlation Coefficient (MCC)</strong>;<br />
+<img alt="☑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2611.svg" title=":ballot_box_with_check:" /> &nbsp; <strong>Taxa de Falsos Positivos (False Positive Rate)</strong>;<br />
+<img alt="☑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2611.svg" title=":ballot_box_with_check:" /> &nbsp; <strong>Taxa de Falsos Negativos (False Negative Rate)</strong>;<br /></p>
+</div>
+<p>6 - Salvamento e Carregamento de Modelos<br />
+Funções para salvar e carregar modelos usando a biblioteca pickle.<br /></p>
 
 
 

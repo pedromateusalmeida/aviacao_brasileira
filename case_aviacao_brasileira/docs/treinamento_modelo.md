@@ -19,6 +19,7 @@ Modelo Utilizado: XGBoost (Extreme Gradient Boosting).<br />
 Ajuste de Hiperparâmetros:<br />
 Implementação de uma função para ajuste de hiperparâmetros (hipertunnig) usando validação cruzada (Cross-validation). Vale destacar que o SMOTE foi aplicado dentro de cada segmentação de dados da etapa da validação cruzada. <br />
 Técnicas de otimização: hyperopt e skopt.<br />
+Treinamento do modelo com melhores parâmetros.<br />
 
 
 !!! info "SMOTE (Synthetic Minority Over-sampling Technique)"
@@ -46,8 +47,27 @@ Técnicas de otimização: hyperopt e skopt.<br />
         Limitações: Pode gerar exemplos sintéticos que não representam bem a realidade se os dados originais já estiverem muito desequilibrados ou se tiverem muitos outliers.
 
 5 - Avaliação do Modelo<br />
+!!!warning
+    É importante destacar que nem todas as métricas empregadas nesta análise são as mais apropriadas para contextos onde a variável dependente é desbalanceada. Estas métricas foram selecionadas principalmente com o objetivo de aprendizado, e cada uma delas merece uma exploração mais detalhada e até postagens separadas.<br />
 Métricas de Avaliação:<br />
-Acurácia, F1-Score, Matriz de Confusão, ROC-AUC, Recall, Precisão, Log Loss, Average Precision Score. Curvas ROC e Precision-Recall.<br />
+- Acurácia <br />
+- F1-Score <br />
+- Matriz de Confusão <br />
+- ROC-AUC <br />
+- Recall <br />
+- Precisão <br />
+- Log Loss <br />
+- Average Precision Score <br />
+- Curva ROC <br />
+- Curva Precision-Recall<br />
 
+!!! info "Outras métricas para valiação de modelos de classificação"
+    :ballot_box_with_check: &nbsp; **Kappa de Cohen (Cohen's Kappa)**;<br />
+    :ballot_box_with_check: &nbsp; **F-Score Balanceado**;<br />
+    :ballot_box_with_check: &nbsp; **Matthews Correlation Coefficient (MCC)**;<br />
+    :ballot_box_with_check: &nbsp; **Taxa de Falsos Positivos (False Positive Rate)**;<br />
+    :ballot_box_with_check: &nbsp; **Taxa de Falsos Negativos (False Negative Rate)**;<br />
+
+    
 6 - Salvamento e Carregamento de Modelos<br />
 Funções para salvar e carregar modelos usando a biblioteca pickle.<br />

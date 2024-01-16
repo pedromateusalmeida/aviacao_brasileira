@@ -1,4 +1,4 @@
-## Pontualidade da Aviação Brasileira
+## Pontualidade da aviação brasileira
 <center>
 ![Image title](aviaonuvens_fundo.png)
 <br /> Fig: Anuário do Transporte Aéreo
@@ -7,7 +7,7 @@
 Nos últimos três anos, o mercado da aviação brasileira apresentou uma variedade de sinais de crescimento e recuperação, particularmente após os desafios enfrentados devido à pandemia de COVID-19.
 <br />
 <br />
-Até o ano de 2022, o setor aéreo no Brasil mostrou uma recuperação significativa em seus principais indicadores. Em 2022, aproximadamente 831 mil voos foram realizados, tanto em rotas domésticas quanto internacionais, representando um aumento de 39% em relação a 2021. Nesse mesmo período, cerca de 98 milhões de passageiros foram transportados, evidenciando uma importante retomada após os impactos da pandemia.
+Até o ano de 2022, o setor aéreo no Brasil mostrou uma recuperação significativa em seus principais indicadores. Em 2022, aproximadamente 831 mil voos foram realizados, tanto em rotas domésticas quanto internacionais, representando um aumento de 39% em relação a 2021. Nesse mesmo período, cerca de 98 milhões de passageiros foram transportados, evidenciando a retomada após os impactos da pandemia.
 <br /></div>
 <center>
 ![Image title](voos_dom_int.png)
@@ -21,7 +21,7 @@ Nos últimos cinco anos, três companhias aéreas principais - Azul, Gol e Latam
 <br /> Fig: Anuário do Transporte Aéreo
 </center>
 
-## Indicador de Pontualidade
+## Indicador de pontualidade
 <center>
 ![Image title](indicador_pontualidade_png.png)
 </center>
@@ -30,15 +30,17 @@ Outro ponto que gostaria de trazer para o case, e que está relacionado ao seu o
 <br />
 <br />
 Calculo: <br />
-Indicador de Pontualidade=1−voos atrasados/voos realizados
+Indicador de Pontualidade = 1 − voos atrasados / voos realizados
 <br /><br />
 Interpretando o resultado:<br />
 Ele está medindo a proporção de voos que estão no horário em relação ao total de voos realizados. O que podemos dizer sobre os resultados desse indicador:<br /><br />
 - Um valor próximo de 1 indica alta pontualidade, significando que a maioria dos voos está chegando ou partindo no horário.<br />
 - Um valor mais baixo indica uma maior incidência de atrasos.<br />
-- Se o indicador for 0, isso significa que todos os voos estão atrasados.<br />
-<br /><br />
-Essa será uma métrica presente na nossa análise exploratória e que nos ajudará a tirar insights. Outro ponto a ser abordado nesse case é: ter mais dados é sempre benéfico para o modelo? Aqui, serão apresentados mais de uma versão do modelo, um utilizando poucos dados e outras versões utilizando mais dados, como dados meteorologicos do dia e da hora que o voo foi realizado. Ao aumentarmos o nível de informações, vamos esbarrar em problemas reais de Big Data, portanto, vou utilizar ferramentas adequadas para tanto. Prentendo aplicar as boas práticas de codificação, segmentação de script e na execução de cada etapa do projeto. 
+- Se o indicador for 0, significa que todos os voos estão atrasados.<br />
+<br />
+Essa será uma métrica presente na nossa análise exploratória e que nos ajudará a tirar insights. <br /><br />
+
+Outro ponto a ser abordado nesse case é o questionamento sobre se ter mais dados é sempre benéfico para o modelo. Aqui, serão apresentados mais de uma versão do modelo, um utilizando poucos dados e outras versões utilizando mais dados, como dados meteorologicos do dia e da hora em que o voo foi realizado. Ao aumentarmos o nível de informações, vamos esbarrar em problemas reais de Big Data, portanto, vou utilizar ferramentas adequadas para tanto. Prentendo aplicar as boas práticas na codificação e na execução de cada etapa do projeto. 
 </div>
 
 ## Referências

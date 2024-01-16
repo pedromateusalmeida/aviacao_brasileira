@@ -3,7 +3,6 @@
 ![Image title](profile_pic.png)
 </center>
 <center>
-
 [:simple-linkedin:](https://www.linkedin.com/in/pedro-mateus-almeida-br)
 [:simple-github:](https://www.github.com/pedromateusalmeida)
 </center>

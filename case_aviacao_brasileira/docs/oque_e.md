@@ -1,12 +1,11 @@
-## Testes Paramétricos
+## Testes paramétricos
 !!!warning
     O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ### O que são?<br /><br />
 Testes paramétricos são métodos estatísticos que assumem uma distribuição específica dos dados, geralmente a distribuição normal. Eles também pressupõem outras condições, como homogeneidade de variâncias e a relação linear entre variáveis.<br />
-### Características Principais<br /><br />
-1.	Distribuição Conhecida: Requerem que os dados sigam certas distribuições (frequentemente normal).<br />
-2.	Homocedasticidade: Pressupõem que as variâncias dos grupos são iguais.<br />
-3.	Relações Lineares: São mais eficazes em analisar relações lineares.<br /><br />
+### Características principais<br /><br />
+Distribuição conhecida, já que requerem que os dados sigam certas distribuições (frequentemente normal); homocedasticidade, uma vez que pressupõem que as variâncias dos grupos são iguais; e apresentar relações lineares, para as quais são mais eficazes em analisar.<br />
+<br /><br />
 ### Exemplos Comuns<br /><br />
 •	Teste t (incluindo t de Student para amostras independentes ou pareadas)<br />
 •	ANOVA (Análise de Variância)<br />

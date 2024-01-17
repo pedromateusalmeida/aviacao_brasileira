@@ -4,7 +4,7 @@ ANOVA (Análise de Variância) é uma técnica estatística usada para comparar 
 H0: as médias de duas ou mais populações são iguais.<br />
 Ha: pelo menos uma das médias populacionais é diferente.<br /><br />
 
-Como objetivo do teste olhar variância de duas populações e ver se as médias dessas populações são iguais ou não. Para que isso aconteça é necessário:<br /
+Como objetivo do teste olhar variância de duas populações e ver se as médias dessas populações são iguais ou não. Para que isso aconteça é necessário:<br />
 1 . A distribuição da variável em questão seja Gaussiana para todas as populações;<br />
 2. O desvio-padrão seja igual para todas as populações. Ou seja, se as populações tiverem médias diferentes, teremos:<br />
 </div>

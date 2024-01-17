@@ -1,8 +1,9 @@
-!!!warning
-    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ## O que é PCA?
-A Análise de Componentes Principais (PCA) é uma técnica de redução de dimensionalidade que transforma os dados originais em um novo conjunto de variáveis, denominadas componentes principais. Estas componentes são obtidas de forma que a primeira capture a maior variação possível nos dados, e cada componente subsequente tenha a maior variação possível sob a restrição de ser ortogonal às componentes anteriores.<br />
+<div style="text-align: justify">
+A Análise de Componentes Principais (PCA) é uma técnica de redução de dimensionalidade que transforma os dados originais em um novo conjunto de variáveis, denominadas componentes principais os elementos que compõe uma componente são ortogonais (não-correlacionados e independentes). Estas componentes são obtidas de forma que a primeira capture a maior variação possível nos dados, e cada componente subsequente tenha a maior variação possível sob a restrição de ser ortogonal às componentes anteriores.<br />
+</div>
 ## Como Funciona
+<div style="text-align: justify">
 O PCA segue os seguintes passos:<br />
 1.	Padronizar os dados (média zero e variação unitária).<br />
 2.	Calcular a matriz de covariância dos dados padronizados.<br />
@@ -10,38 +11,49 @@ O PCA segue os seguintes passos:<br />
 4.	Ordenar os autovetores pelo seu autovalor correspondente, em ordem decrescente.<br />
 5.	Selecionar os N primeiros autovetores para formar o conjunto de componentes principais, onde N é o número de componentes desejado.<br />
 6.	Transformar os dados originais usando este conjunto de autovetores para obter os dados projetados sobre os componentes principais.<br />
-## Aplicabilidade
-O PCA é aplicável quando:
-•	Existe necessidade de reduzir a quantidade de variáveis, mas manter a maior parte da informação.<br />
-•	Os dados têm muitas variáveis correlacionadas (multicolinearidade).<br />
-•	Deseja-se visualizar a estrutura de alta dimensão dos dados em um espaço de menor dimensão.<br />
-## Prós e Contras
-### Prós 
-•	Reduz a dimensionalidade, diminuindo o espaço de armazenamento e o tempo de computação.<br />
-•	Remove a multicolinearidade entre as variáveis.<br />
-•	Facilita a visualização dos dados.<br />
-### Contras 
-•	A seleção de componentes não é baseada na variável de resposta, e sim na variação explicada, o que pode excluir variáveis importantes para a previsão.<br />
-•	A interpretabilidade das componentes pode ser difícil, já que elas são combinações lineares das variáveis originais.<br />
-•	A perda de informação pode acontecer se um número muito limitado de componentes for selecionado.<br />
-## Interpretação e Cuidados
-### Na interpretação do PCA 
-•	Deve-se considerar a variação total explicada pelas componentes selecionadas.<br />
-•	Cada componente é uma mistura das características originais, e o significado dessas misturas pode não ser intuitivamente claro.<br />
-•	A análise de carga dos componentes (component loadings) pode ajudar a entender como as variáveis originais contribuem para cada componente.<br />
-### Cuidados ao utilizar PCA 
-•	A padronização dos dados é crucial, especialmente quando as variáveis têm diferentes unidades de medida.<br />
-•	A escolha do número de componentes a serem mantidos deve ser feita com base na quantidade de variação que se deseja capturar.<br />
-•	PCA é sensível a outliers, que podem distorcer a direção dos componentes principais.<br />
-•	Em contextos supervisionados, é importante usar o PCA de maneira que não incorpore informações do conjunto de teste durante o treinamento.<br />
-## Informações Adicionais
-•	Interpretabilidade: Ferramentas como o biplot podem ser úteis para interpretar PCA, pois mostram os componentes principais e as contribuições das variáveis originais simultaneamente.<br />
-•	Variação Explicada: A proporção de variação explicada por cada componente principal é uma peça-chave para decidir quantos componentes reter.<br />
-
-<br />
-
 </div>
-<center>
-[Repositório do Case](https://github.com/pedromateusalmeida/aviacao_brasileira){ .md-button .md-button--primary }
-<center>
+!!!tip "Aplicabilidades"
+    •	Quando existe necessidade de reduzir a quantidade de variáveis, mas manter a maior parte da informação.<br />
+    •	Quando há dados que possuem muitas variáveis correlacionadas (multicolinearidade).<br />
+    •	Deseja-se visualizar a estrutura de alta dimensão dos dados em um espaço de menor dimensão.<br />
+    •	Deseja criar um índice.<br />
+    •	Realizar feature selection (esse é polêmico).<br />
+
+<div style="text-align: justify">   
+O PCA como mencionado tem a capacidade reduzir a dimensionalidade, diminuindo o espaço de armazenamento e o tempo de computação. Ele pode reduzir a multicolinearidade, ou seja, variáveis que possuem uma grande correlação e medem coisas semelhantes podem ser reduzidas a um vetor númerico que represente essas varíaveis. No case aplico a técnica do PCA nos elementos meteorológicos de vento e umidade, cada um desses elmentos possuem três métricas relacionadas a elas no dataset. Aplico uma redução e crio uma nova coluna chamada componente_umidade e componente_vento, os valores desses vetores passaram a ser os valores referente a aos elementos meteorológicos de vento e umidade.<br /><br />
+
+A análise de componentes realiza combinações lineares das variáveis originais, isso acaba dificultando a interpretabilidade das componentes. Porém temos os pesos de cada variável para aquela componente. Então se pegarmos a componente com a maior variância (explicabilidade), geralmente é a primeira componente podemos olhar para a carga de cada variável para a componente (component loadings). Apesar de ser um método que auxilia no processo de feature selection não é adequado utilizado sozinho. <br />
+</div>
+
+!!!warning "Cuidados que se deve ter para interpretar os resultados do PCA."
+    •	Deve-se considerar a variação total explicada pelas componentes selecionadas.<br />
+    •	A análise de carga dos componentes pode ajudar a entender como as variáveis originais contribuem para cada componente.<br />
+    •	PCA é sensível a outliers, que podem distorcer a direção dos componentes principais.<br />
+    •	A escolha do número de componentes a serem mantidos deve ser feita com base na quantidade de variação que se deseja capturar.<br />
+    •	Em contextos supervisionados, é importante usar o PCA de maneira que não incorpore informações do conjunto de teste durante o treinamento.<br />
+    •	Variação Explicada: A proporção de variação explicada por cada componente principal é uma peça-chave para decidir quantos componentes reter.<br />
+    •	A perda de informação pode acontecer se um número muito limitado de componentes for selecionado.<br />
+
+
+## No case
+No case o PCA foi utilizado para reduzir as dimensões de vento e umidade, ele também foi aplicado como técnica de feature selection. <br />
+
+[Aplicação do PCA no Case](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/4_3_feature_selection.ipynb){ .md-button .md-button--primary }
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+## Referências
+
+- [Stack Exchange - Usando Análise de Componentes Principais (PCA) para seleção de recursos](https://stats.stackexchange.com/questions/27300/using-principal-component-analysis-pca-for-feature-selection)
+
+- [Towards Data Science - PCA não é seleção de recursos](https://towardsdatascience.com/pca-is-not-feature-selection-3344fb764ae6)
+
+- [Hastie et al. - Artigo sobre Análise Espectral de Componentes Principais (PDF)](https://hastie.su.domains/Papers/spc_jcgs.pdf)
+
+- [UTSA - Análise de Componentes Principais: Uma Abordagem para a Engenharia de Recursos (PDF)](https://rrpress.utsa.edu/server/api/core/bitstreams/014f44f9-d16c-4000-95c2-dcb8e983c474/content)
+
+- [Medium - Análise de Componentes Principais: Técnica de Extração de Recursos](https://medium.com/@mayureshrpalav/principal-component-analysis-feature-extraction-technique-3f480d7b9697)
+
+- [Medium - Análise de Componentes Principais (PCA) na Engenharia de Recursos](https://medium.com/geekculture/principal-component-analysis-pca-in-feature-engineering-472afa39c27d)
+

@@ -19,6 +19,6 @@ As características com importância alta são aquelas cuja permutação (embara
     •	Considerar a possibilidade de usar a média de várias rodadas de permutação para cada característica para reduzir a variabilidade.<br />
     •	Lembre-se de que a importância de permutação não captura a interação entre características.<br />
 
-[Aplicação do Permutation Importance no Case](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/3_2_analise_exploratoria.ipynb){ .md-button .md-button--primary }
+[Aplicação do Permutation Importance no Case](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/4_3_feature_selection.ipynb){ .md-button .md-button--primary }
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -29,6 +29,6 @@ Cuidados ao utilizar a Importância Baseada em Modelo:<br />
 •	Interpretação Adicional: O uso de visualizações como gráficos de barras pode ajudar na interpretação e apresentação das importâncias dos recursos.<br />
 •	Modelos compatíveis: Enquanto a importância baseada em modelo é mais comum em árvores de decisão e florestas aleatórias, outros modelos baseados em árvores, como gradient boosting machines (GBMs), também fornecem métricas de importância semelhantes.<br />
 <center>
-[Repositório do Case](https://github.com/pedromateusalmeida/aviacao_brasileira){ .md-button .md-button--primary }
+[Repositório do Case](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/4_3_feature_selection.ipynb){ .md-button .md-button--primary }
 <center>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

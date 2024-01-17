@@ -1,7 +1,7 @@
-## Treinamento de Modelo de Machine Learning
+## Treinamento de modelo de machine learning
 
-1-  Configuração do Ambiente
-Bibliotecas Importadas:<br />
+1-  Configuração do ambiente
+bibliotecas importadas:<br />
 Manipulação de dados: pandas, numpy.<br />
 Visualização de dados: seaborn, matplotlib.pyplot, scikitplot.<br />
 Machine Learning (Pré-processamento e métricas): scikit-learn, imblearn, xgboost, shap, hyperopt.<br />
@@ -14,8 +14,19 @@ Seleção das colunas que vão participar do treinamento.<br />
 3 - Pré-processamento de Dados<br />
 Codificação de Características: Utilização de codificação one-hot para transformar características categóricas.<br />
 
-4 - Modelagem<br />
+4 - Treinamento<br />
 Modelo Utilizado: XGBoost (Extreme Gradient Boosting).<br />
+!!! info "Para mais informações sobre o funcionamento XGBoost acesse:"
+    - [Understanding XGBoost - A Comprehensive Guide (YouTube Video)- Parte 1](https://www.youtube.com/watch?v=OtD8wVaFm6E)<br />
+    - [XGBoost in Python from Start to Finish (YouTube Video) - Parte 2](https://www.youtube.com/watch?v=8b1JEDvenQU)<br />
+    - [XGBoost Explained (Kaggle) (YouTube Video) - Parte 3](https://www.youtube.com/watch?v=ZVFeW798-2I)<br />
+    - [XGBoost Machine Learning Algorithm Explained (YouTube Video) - Parte 3](https://www.youtube.com/watch?v=oRrKeUCEbq8)<br />
+    - [What is XGBoost? - NVIDIA Glossary](https://www.nvidia.com/en-us/glossary/xgboost/#:~:text=What%20is%20XGBoost%3F,%2C%20classification%2C%20and%20ranking%20problems.)<br />
+    - [XGBoost - GeeksforGeeks](https://www.geeksforgeeks.org/xgboost/)<br />
+    - [An End-to-End Guide to Understand the Math behind XGBoost - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2018/09/an-end-to-end-guide-to-understand-the-math-behind-xgboost/)<br />
+    - [XGBoost Documentation](https://xgboost.readthedocs.io/en/stable/tutorials/model.html)<br />
+
+
 Ajuste de Hiperparâmetros:<br />
 Implementação de uma função para ajuste de hiperparâmetros (hipertunnig) usando validação cruzada (Cross-validation). Vale destacar que o SMOTE foi aplicado dentro de cada segmentação de dados da etapa da validação cruzada. <br />
 Técnicas de otimização: hyperopt e skopt.<br />

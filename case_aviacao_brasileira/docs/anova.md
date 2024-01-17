@@ -33,7 +33,7 @@ Se H0 for verdadeira, ou seja, as médias entre os grupos não são diferentes  
 Se HA for verdadeira, isso quer dizer que as médias entre os grupos são diferentes<br />
 σ2 entre > σ2 dentro<br />
 </div>
-><center>
+<center>
 [![Image title](anova_ha.png)](anova_ha.png?data-lightbox="image-1" data-title="My caption")
 </center>
 
@@ -70,9 +70,9 @@ O teste ANOVA permite a avaliar a influência variáveis categóricas sobre uma 
 <div style="text-align: justify">
 No contexto do case foi utilizado a variável dependente categórica status_do_voo (Pontual/Atrasado) e as variáveis númericas de meteorologia, por exemplo, precipitação, temperatura, umidade, pressão. 
 </div>
-<center>
+
 [Aplicação do ANOVA no Case](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/4_3_feature_selection.ipynb){ .md-button .md-button--primary }
-<center>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Referências

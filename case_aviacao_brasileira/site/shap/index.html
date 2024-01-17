@@ -822,84 +822,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#aplicabilidade" class="md-nav__link">
+  <a href="#referencias" class="md-nav__link">
     <span class="md-ellipsis">
-      Aplicabilidade
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pros-e-contras" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prós e Contras
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prós e Contras">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pros" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prós
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contras" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contras
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interpretacao-e-cuidados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interpretação e Cuidados
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Interpretação e Cuidados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ao-interpretar-os-valores-shap" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ao interpretar os valores SHAP
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cuidados-ao-utilizar-shap" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cuidados ao utilizar SHAP
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#informacoes-adicionais" class="md-nav__link">
-    <span class="md-ellipsis">
-      Informações Adicionais
+      Referências
     </span>
   </a>
   
@@ -946,7 +871,7 @@
         
   
   <span class="md-ellipsis">
-    PPScore
+    PPScore (Predictive Power Score)
   </span>
   
 
@@ -1094,84 +1019,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#aplicabilidade" class="md-nav__link">
+  <a href="#referencias" class="md-nav__link">
     <span class="md-ellipsis">
-      Aplicabilidade
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pros-e-contras" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prós e Contras
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prós e Contras">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pros" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prós
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contras" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contras
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interpretacao-e-cuidados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interpretação e Cuidados
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Interpretação e Cuidados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ao-interpretar-os-valores-shap" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ao interpretar os valores SHAP
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cuidados-ao-utilizar-shap" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cuidados ao utilizar SHAP
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#informacoes-adicionais" class="md-nav__link">
-    <span class="md-ellipsis">
-      Informações Adicionais
+      Referências
     </span>
   </a>
   
@@ -1197,53 +1047,49 @@
 
   <h1>SHAP (SHapley Additive exPlanations)</h1>
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. </p>
-</div>
 <h2 id="o-que-e-shap">O que é SHAP?</h2>
-<p>SHAP é uma abordagem de interpretação de modelo baseada na teoria dos jogos que atribui a cada característica um valor que representa sua importância na previsão de cada instância. Os valores SHAP são baseados nos valores de Shapley, um conceito da teoria dos jogos cooperativos que distribui a "recompensa" (ou seja, a previsão do modelo) entre os colaboradores (recursos) de forma justa.<br /></p>
+<div style="text-align: justify">
+
+SHAP é uma abordagem de interpretação de modelo baseada na teoria dos jogos que atribui a cada característica um valor que representa sua importância na previsão de cada instância. Os valores SHAP são baseados nos valores de Shapley, um conceito da teoria dos jogos cooperativos que distribui a "recompensa" (ou seja, a previsão do modelo) entre os colaboradores (recursos) de forma justa. O Shap me foi apresentado como uma das 7 maravilhas do machine learning e passado os anos tenho que concordar, pois ainda é uma ferramenta muito viva na area de ciência de dados. Pessoalmetne falando sou encantado com a robustez do algoritmo. <br />
+</div>
+
 <h2 id="como-funciona">Como Funciona</h2>
-<p>A interpretação do modelo com SHAP envolve os seguintes passos:<br />
-1.  Para uma dada instância, o modelo faz uma previsão usando todas as características.<br />
-2.  Subconjuntos de características são sistematicamente "desligados" (simulando a ausência de informações), e a previsão é feita sem
+<div style="text-align: justify">
+A interpretação do modelo com SHAP envolve os seguintes passos:<br />
+1.Para uma dada instância, o modelo faz uma previsão usando todas as características.<br />
+2.Subconjuntos de características são sistematicamente "desligados" (simulando a ausência de informações), e a previsão é feita sem
 eles. <br />
 3. O impacto de cada característica na mudança da previsão em relação à previsão base (a previsão média para o conjunto de dados) é calculado. Este impacto é o valor SHAP para a característica naquela instância.<br />
-4.  Todos os valores possíveis de subconjuntos de características são considerados para calcular o valor SHAP final para cada característica, o que garante uma distribuição justa e consistente de importância entre as características.<br /></p>
-<h2 id="aplicabilidade">Aplicabilidade</h2>
-<p>SHAP é útil quando:<br />
-•   É necessário explicar as previsões de um modelo em um nível individual, isto é, para uma instância específica.<br />
-•   Queremos entender o modelo de forma global, observando a importância média das características em todas as instâncias.<br />
-•   Precisamos de uma interpretação consistente e justa da contribuição das características, baseada na teoria dos jogos.<br /></p>
-<h2 id="pros-e-contras">Prós e Contras</h2>
-<h3 id="pros">Prós</h3>
-<p>•   Fornece interpretações locais e globais do modelo.<br />
-•   Baseia-se em uma base teórica sólida (valores de Shapley), garantindo justiça e consistência.<br />
-•   Aplicável a qualquer modelo de Machine<br />
-Learning, sendo considerado modelo-agnóstico.<br />
-•   Os valores SHAP podem ser facilmente visualizados e interpretados através de gráficos de força, gráficos de resumo, entre outros.<br /></p>
-<h3 id="contras">Contras</h3>
-<p>•   Computacionalmente intensivo, especialmente para modelos com um grande número de características e dados.<br />
-•   A interpretação dos valores SHAP pode ser complexa devido à sua natureza distributiva e ao grande número de subconjuntos de características possíveis.<br />
-•   Pode ser desafiador para modelos com interações complexas entre as características.<br /></p>
-<h2 id="interpretacao-e-cuidados">Interpretação e Cuidados</h2>
-<h3 id="ao-interpretar-os-valores-shap">Ao interpretar os valores SHAP</h3>
-<p>•   Valores SHAP positivos indicam que a característica aumentou a previsão, enquanto valores negativos indicam uma diminuição.<br />
-•   A magnitude do valor SHAP reflete a força da contribuição da característica, independente do sinal.<br />
-•   É importante analisar tanto os valores SHAP individuais (interpretação local) quanto a distribuição dos valores SHAP em todo o conjunto de dados (interpretação global).<br /></p>
-<h3 id="cuidados-ao-utilizar-shap">Cuidados ao utilizar SHAP</h3>
-<p>•   Deve-se estar ciente do custo computacional e considerar o uso de aproximações ou um número menor de subconjuntos para modelos grandes.<br />
-•   É importante compreender as limitações do modelo de Machine Learning subjacente, pois os valores SHAP refletem a estrutura do modelo.<br />
-•   Ao interpretar os resultados, deve-se ter em mente que a soma dos valores SHAP para todas as características aproxima a diferença entre a previsão para uma instância específica e a previsão média do modelo.<br /></p>
-<h2 id="informacoes-adicionais">Informações Adicionais</h2>
-<p>•   Visualizações com SHAP: As bibliotecas de SHAP incluem muitas visualizações úteis que podem ajudar na interpretação, como bee swarm plots, bar plots, e waterfall plots.<br />
-•   Consistência com Atribuição de Importância: Os valores SHAP são consistentes em sua atribuição; se uma característica contribui mais para a previsão do que outra, seu valor SHAP será maior.<br /></p>
+4.  Todos os valores possíveis de subconjuntos de características são considerados para calcular o valor SHAP final para cada característica, o que garante uma distribuição justa e consistente de importância entre as características.<br /><br />
+
+O valores SHAP positivos indicam que a característica aumentou a previsão, enquanto valores negativos indicam uma diminuição. A magnitude do valor SHAP reflete a força da contribuição da característica, independente do sinal.<br />
+</div>
+
+<div class="admonition warning">
+<p class="admonition-title">O calcular o shap demanda recurso computacional</p>
+</div>
+<div style="text-align: justify">
+O Shap é uma ótima ferramenta para interpretar métricas locais e globais do modelo. Baseia-se em uma base teórica sólida (valores de Shapley), garantindo justiça e consistência. E ainda é versátil, pois é aplicável a qualquer modelo de Machine Learning, sendo considerado modelo-agnóstico. Os valores SHAP podem ser facilmente visualizados e interpretados através de gráficos de força, gráficos de resumo, entre outros.<br /><br />
+
+Porém como mencionado anteriormente é um calculo computacionalmente intensivo, especialmente para modelos com um grande número de características e dados e pode ser desafiador para modelos com interações complexas entre as características.<br />
+</div>
+
+<div class="admonition tips">
+<p class="admonition-title">Dicas</p>
+<p>•   As bibliotecas de SHAP incluem muitas visualizações úteis que podem ajudar na interpretação, como bee swarm plots, bar plots, e waterfall plots.<br />
+•   Os valores SHAP são consistentes em sua atribuição; se uma característica contribui mais para a previsão do que outra, seu valor SHAP será maior.<br /></p>
+</div>
 <p><br /></p>
-<p></div>
-<center>
-<a class="md-button md-button--primary" href="https://github.com/pedromateusalmeida/aviacao_brasileira">Repositório do Case</a>
-<center>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><a class="md-button md-button--primary" href="https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/3_2_analise_exploratoria.ipynb">Aplicação do Shap no Case (feature selection)</a>
+<br /></p>
+<p><a class="md-button md-button--primary" href="https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/3_2_analise_exploratoria.ipynb">Aplicação do Shap no case (análise do modelo)</a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<h2 id="referencias">Referências</h2>
+<ul>
+<li><a href="https://christophm.github.io/interpretable-ml-book/shapley.html">Interpretable Machine Learning: A Guide for Making Black Box Models Explainable - SHAPLEY Values</a></li>
+<li><a href="https://shap.readthedocs.io/en/latest/api_examples.html">SHAP Documentation: API Examples</a></li>
+<li><a href="https://shap.readthedocs.io/en/latest/tabular_examples.html">SHAP Documentation: Tabular Examples</a></li>
+</ul>
 
 
 

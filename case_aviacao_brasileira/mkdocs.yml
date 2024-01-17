@@ -120,7 +120,7 @@ nav:
       - Correlação: correlacao.md
       - SHAP (SHapley Additive exPlanations): shap.md
       - Importância Baseada em Modelo: imp_bas_model.md
-      - PPScore: ppscore.md
+      - PPScore (Predictive Power Score): ppscore.md
   - Treinamento do modelo: treinamento_modelo.md
   - Análise da Performance do Modelo: analise_performance_modelo.md
   - Ferramentas/Versionamento: ferramentas_versionamento.md

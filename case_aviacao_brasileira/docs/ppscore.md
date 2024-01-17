@@ -1,33 +1,39 @@
-## PPScore (Predictive Power Score)
-!!!warning
-    O conteúdo foi produzido com o Chatgpt. Eu passei alguns materiais e passei alguns direcionamentos. Ainda é necessário inserir bibliografia e aprofundar nos tópicos. 
 ### O que é PPScore?
-O Predictive Power Score (PPScore) é uma métrica alternativa à correlação que quantifica a relação entre duas variáveis, levando em conta não apenas relações lineares, mas também padrões mais complexos. Ele pode ser usado para identificar relações unidirecionais e não lineares entre duas variáveis.<br />
+O Predictive Power Score (PPScore) é uma métrica alternativa à correlação que quantifica a relação entre duas variáveis, levando em conta não apenas relações lineares, mas também padrões mais complexos. Ele pode ser usado para identificar relações unidirecionais e não lineares entre duas variáveis. Resumindo a pontuação de poder preditivo é uma pontuação assimétrica e independente do tipo de dados que pode detectar relações lineares ou não lineares entre duas colunas. A pontuação varia de 0 (sem poder preditivo) a 1 (poder preditivo perfeito)<br /><br />
+
+<center>
+[![Image title](PPS_01_png.png)](PPS_01_png.png?data-lightbox="image-1" data-title="My caption")
+</center>
+
 ### Como Funciona
 •	O PPScore mede a capacidade de uma variável (X) prever outra variável (Y) através de um modelo de machine learning.<br />
 •	Um modelo é construído para prever Y a partir de X e o desempenho do modelo é comparado com um modelo simples (naive model).<br />
-•	O PPScore varia de 0 (sem poder preditivo) a 1 (poder preditivo perfeito).<br />
-### Aplicabilidade
-•	Útil para identificar relações não lineares e unidirecionais entre variáveis.<br />
-•	Pode ser usado em qualquer tipo de variável (numérica ou categórica).<br />
-•	Útil para seleção de recursos e análise exploratória de dados.<br />
-### Prós e Contras
-#### Prós
-•	Capaz de identificar relações não lineares e unidirecionais que a correlação tradicional pode não capturar.<br />
-•	Versátil para diferentes tipos de dados, incluindo variáveis numéricas e categóricas.<br />
-•	Fornece uma visão mais abrangente da relevância preditiva de uma característica em relação à variável alvo.<br />
-#### Contras
-•	Pode ser mais computacionalmente intensivo do que o cálculo de correlação, pois envolve a construção de modelos preditivos.<br />
-•	A interpretação dos resultados pode ser menos intuitiva do que os coeficientes de correlação tradicionais.<br />
-•	Dependendo do modelo utilizado para calcular o PPScore, pode ser sensível a overfitting, especialmente em conjuntos de dados menores.<br />
-### Interpretação e Cuidados
-•	Um PPScore alto indica que a característica tem um forte poder preditivo para a variável alvo.<br />
-•	Um PPScore baixo sugere que a característica tem pouco ou nenhum poder preditivo.<br />
-•	É importante avaliar o PPScore em conjunto com outras análises, como a de correlação e a importância de recursos, para obter uma visão holística das relações nos dados.<br />
-### Cuidados ao utilizar PPScore:
-•	É crucial validar o modelo usado para calcular o PPScore para evitar overfitting.<br />
-•	O PPScore deve ser complementado com outras técnicas de análise de dados para uma compreensão completa das relações entre as variáveis.<br />
-•	O PPScore pode ser influenciado pela escolha do algoritmo de machine learning e pelos hiperparâmetros utilizados.<br />
-### Informações Adicionais
-•	Uso com Diferentes Modelos: O PPScore pode ser calculado usando diferentes modelos de machine learning, o que pode resultar em diferentes PPScores para a mesma relação de variáveis.<br />
-•	Visualizações: Gráficos de matriz de PPScore podem ser úteis para visualizar as relações entre múltiplas variáveis de um conjunto de dados.<br />
+
+
+!!!tip "Aplicabilidade"
+    •	Útil para identificar relações não lineares e unidirecionais entre variáveis.<br />
+    •	Pode ser usado em qualquer tipo de variável (numérica ou categórica).<br />
+    •	Útil para seleção de recursos e análise exploratória de dados.<br />
+
+### Interpretação
+Um PPScore alto indica que a característica tem um forte poder preditivo para a variável alvo e já um baixo sugere que a característica tem pouco ou nenhum poder preditivo. Apesar do PPScore ser extremamente útil para É importante avaliar identificar relações não lineares e unidirecionais entre variáveis, este carece de ser feito em conjunto com outras análises, como a de correlação e a importância de recursos, para obter uma visão holística das relações nos dados, evitando assim conclusões errôneas. <br />
+
+O PPScore é versátil para diferentes tipos de dados, incluindo variáveis numéricas e categóricas. E por fim não menos importante, temos que destacar que o PPScore demandar mais computacionalmente se compararmos com o cálculo de correlação, pois envolve a construção de modelos preditivos e dependendo do modelo utilizado para calcular o PPScore, pode ser sensível a overfitting, especialmente em conjuntos de dados menores.<br />
+
+!!!tip "Visualização do resultado"
+    Gráficos de matriz de PPScore podem ser úteis para visualizar as relações entre múltiplas variáveis de um conjunto de dados.<br />
+
+## No case
+No case o PPScore foi utilizado na etapa da análise explortatória. Nesse primeiro momento ela foi utilizada com a finalidade de visualizar potenciais correlações entre as colunas. 
+
+[Aplicação do PPScore no Case](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/3_2_analise_exploratoria.ipynb){ .md-button .md-button--primary }
+
+## Referências
+
+- [ppscore - GitHub](https://github.com/8080labs/ppscore)<br />
+- [Predictive Power Score vs Correlation - Kaggle](https://www.kaggle.com/code/frtgnn/predictive-power-score-vs-correlation)<br />
+- [The Predictive Power Score - MacroSynergy Research](https://research.macrosynergy.com/the-predictive-power-score/)<br />
+- [An Alternative to Correlation: Predictive Power Score in Python - Medium (Geek Culture)](https://medium.com/geekculture/an-alternative-to-correlation-predictive-power-score-in-python-a3160c95d701)<br />
+- [Predictive Power Score Implementation in Python - Medium (Geek Culture)](https://medium.com/geekculture/predictive-power-score-implementation-in-python-70558bf91f45)<br />
+- [RIP Correlation: Introducing the Predictive Power Score - Towards Data Science](https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598)<br />
+

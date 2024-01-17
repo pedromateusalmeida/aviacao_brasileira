@@ -1,7 +1,7 @@
 ## Status atual do projeto
 |Status | Versão      | Data da Atualização | o que foi modificado |
 |---| ----------- | -----------------| ---------------------- | 
-| <span style="color:green;">✔</span>|1.0|13/01/2024| Extração, Tratamento de dados,  feature selection, treinamento, análise do resultado (V1 e V2) e inicio da documentação | 
+| <span style="color:green;">✔</span>|1.0|18/01/2024| Extração, Tratamento de dados,  feature selection, treinamento, análise do resultado (V1 e V2) e inicio da documentação | 
 ||    |   |   |
 ||    |   |   |
  <br />

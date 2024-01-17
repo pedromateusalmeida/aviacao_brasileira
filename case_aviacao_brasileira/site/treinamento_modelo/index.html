@@ -808,7 +808,7 @@
         
   
   <span class="md-ellipsis">
-    PPScore
+    PPScore (Predictive Power Score)
   </span>
   
 
@@ -884,7 +884,7 @@
         <li class="md-nav__item">
   <a href="#treinamento-de-modelo-de-machine-learning" class="md-nav__link">
     <span class="md-ellipsis">
-      Treinamento de Modelo de Machine Learning
+      Treinamento de modelo de machine learning
     </span>
   </a>
   
@@ -985,7 +985,7 @@
         <li class="md-nav__item">
   <a href="#treinamento-de-modelo-de-machine-learning" class="md-nav__link">
     <span class="md-ellipsis">
-      Treinamento de Modelo de Machine Learning
+      Treinamento de modelo de machine learning
     </span>
   </a>
   
@@ -1011,9 +1011,9 @@
 
   <h1>Treinamento do modelo</h1>
 
-<h2 id="treinamento-de-modelo-de-machine-learning">Treinamento de Modelo de Machine Learning</h2>
-<p>1-  Configuração do Ambiente
-Bibliotecas Importadas:<br />
+<h2 id="treinamento-de-modelo-de-machine-learning">Treinamento de modelo de machine learning</h2>
+<p>1-  Configuração do ambiente
+bibliotecas importadas:<br />
 Manipulação de dados: pandas, numpy.<br />
 Visualização de dados: seaborn, matplotlib.pyplot, scikitplot.<br />
 Machine Learning (Pré-processamento e métricas): scikit-learn, imblearn, xgboost, shap, hyperopt.<br />
@@ -1023,9 +1023,22 @@ Leitura de Dados: O script carrega um conjunto de dados de um arquivo CSV para u
 Seleção das colunas que vão participar do treinamento.<br /></p>
 <p>3 - Pré-processamento de Dados<br />
 Codificação de Características: Utilização de codificação one-hot para transformar características categóricas.<br /></p>
-<p>4 - Modelagem<br />
-Modelo Utilizado: XGBoost (Extreme Gradient Boosting).<br />
-Ajuste de Hiperparâmetros:<br />
+<p>4 - Treinamento<br />
+Modelo Utilizado: XGBoost (Extreme Gradient Boosting).<br /></p>
+<div class="admonition info">
+<p class="admonition-title">Para mais informações sobre o funcionamento XGBoost acesse:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=OtD8wVaFm6E">Understanding XGBoost - A Comprehensive Guide (YouTube Video)- Parte 1</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=8b1JEDvenQU">XGBoost in Python from Start to Finish (YouTube Video) - Parte 2</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=ZVFeW798-2I">XGBoost Explained (Kaggle) (YouTube Video) - Parte 3</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=oRrKeUCEbq8">XGBoost Machine Learning Algorithm Explained (YouTube Video) - Parte 3</a><br /></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/xgboost/#:~:text=What%20is%20XGBoost%3F,%2C%20classification%2C%20and%20ranking%20problems.">What is XGBoost? - NVIDIA Glossary</a><br /></li>
+<li><a href="https://www.geeksforgeeks.org/xgboost/">XGBoost - GeeksforGeeks</a><br /></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2018/09/an-end-to-end-guide-to-understand-the-math-behind-xgboost/">An End-to-End Guide to Understand the Math behind XGBoost - Analytics Vidhya</a><br /></li>
+<li><a href="https://xgboost.readthedocs.io/en/stable/tutorials/model.html">XGBoost Documentation</a><br /></li>
+</ul>
+</div>
+<p>Ajuste de Hiperparâmetros:<br />
 Implementação de uma função para ajuste de hiperparâmetros (hipertunnig) usando validação cruzada (Cross-validation). Vale destacar que o SMOTE foi aplicado dentro de cada segmentação de dados da etapa da validação cruzada. <br />
 Técnicas de otimização: hyperopt e skopt.<br />
 Treinamento do modelo com melhores parâmetros.<br /></p>

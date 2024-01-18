@@ -76,5 +76,4 @@ No case foi utilizado a correlação de pearson na etapa da análise explortató
 - [Article on Pearson correlation - SAGE Journals](https://journals.sagepub.com/doi/10.1177/8756479308317006)
 - [Correlação Pearson, Spearman, Kendall - Universidade Federal de Santa Catarina](https://www.inf.ufsc.br/~vera.carmo/Correlacao/Correlacao_Pearson_Spearman_Kendall.pdf)
 - [Coeficiente de correlação de Pearson - Wikipedia](https://pt.wikipedia.org/wiki/Coeficiente_de_correla%C3%A7%C3%A3o_de_Pearson)
-- [Does correlation imply prediction? - NeuroNeurotic](https://neuroneurotic.net/2015/11/30/does-correlation-imply-prediction/)
 

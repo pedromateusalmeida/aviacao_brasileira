@@ -41,24 +41,15 @@ No case, o PCA foi utilizado para reduzir as dimensões de vento e umidade, send
 
 [Aplicação do PCA no Case](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/4_3_feature_selection.ipynb){ .md-button .md-button--primary }
 
-
-
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Referências
 
 - [Stack Exchange - Usando Análise de Componentes Principais (PCA) para seleção de recursos](https://stats.stackexchange.com/questions/27300/using-principal-component-analysis-pca-for-feature-selection)<br/>
-
 - [Towards Data Science - PCA não é seleção de recursos](https://towardsdatascience.com/pca-is-not-feature-selection-3344fb764ae6)<br/>
-
 - [Hastie et al. - Artigo sobre Análise Espectral de Componentes Principais (PDF)](https://hastie.su.domains/Papers/spc_jcgs.pdf)<br/>
-
 - [UTSA - Análise de Componentes Principais: Uma Abordagem para a Engenharia de Recursos (PDF)](https://rrpress.utsa.edu/server/api/core/bitstreams/014f44f9-d16c-4000-95c2-dcb8e983c474/content)<br/>
-
 - [Medium - Análise de Componentes Principais: Técnica de Extração de Recursos](https://medium.com/@mayureshrpalav/principal-component-analysis-feature-extraction-technique-3f480d7b9697)<br/>
-
 - [Medium - Análise de Componentes Principais (PCA) na Engenharia de Recursos](https://medium.com/geekculture/principal-component-analysis-pca-in-feature-engineering-472afa39c27d)<br/>
-
 - Material da especialização da UFMG <br/>
 

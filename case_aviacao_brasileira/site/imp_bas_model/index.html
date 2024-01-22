@@ -69,7 +69,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -131,7 +131,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Modo claro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -141,7 +141,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Modo escuro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -852,16 +852,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pros-e-contras" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prós e Contras
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prós e Contras">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#pros" class="md-nav__link">
     <span class="md-ellipsis">
       Prós
@@ -869,18 +859,13 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#contras" class="md-nav__link">
     <span class="md-ellipsis">
       Contras
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1061,16 +1046,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pros-e-contras" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prós e Contras
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prós e Contras">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#pros" class="md-nav__link">
     <span class="md-ellipsis">
       Prós
@@ -1078,18 +1053,13 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#contras" class="md-nav__link">
     <span class="md-ellipsis">
       Contras
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1132,12 +1102,11 @@
 •   A presença de características correlacionadas pode distorcer a importância real e deve ser tratada com cautela.<br />
 •   Não assuma que as características menos importantes não têm nenhum valor; elas podem ser importantes em modelos diferentes.<br /></p>
 </div>
-<h2 id="pros-e-contras">Prós e Contras</h2>
-<h3 id="pros">Prós</h3>
+<h2 id="pros">Prós</h2>
 <p>•   Fornecida diretamente pelo modelo, sem necessidade de cálculos adicionais.<br />
 •   Leva em conta a interação entre recursos, já que a árvore de decisão considera várias variáveis ao fazer divisões.<br />
 •   Pode ser calculada rapidamente e é intuitiva.<br /></p>
-<h3 id="contras">Contras</h3>
+<h2 id="contras">Contras</h2>
 <p>•   Específica para modelos baseados em árvores e pode não se generalizar para outros tipos de modelos.<br />
 •   Em modelos de árvores complexos ou florestas aleatórias, a importância pode favorecer características com mais categorias ou valores numéricos contínuos.<br />
 •   Pode ser enganosa se houver variáveis correlacionadas, pois a importância pode ser distribuída entre elas.<br /></p>

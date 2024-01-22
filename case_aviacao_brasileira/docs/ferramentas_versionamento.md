@@ -10,7 +10,7 @@
 
 |Status | Descrição do status   | Versão       | O será implentado |
 |---| ----------- | -----------------| ---------------------- | 
-| <span style="color:orange;">⚙️</span> |Em desenvolvimento | 1.1   | Finalização da documentação do case  |  
+| <span style="color:orange;">⚙️</span> |Em desenvolvimento | 1.1   | Revisão e finalização da documentação do case  |  
 | <span style="color:red;">✘</span>  | Backlog | 2.0   |  Configurar servidor com MLflow  |  
 | <span style="color:red;">✘</span>  | Backlog | 3.0   |  Implementar um MVP do modelo em um servidor com MLflow  |  
 ||    | |   |   |

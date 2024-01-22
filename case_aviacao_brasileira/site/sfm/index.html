@@ -69,7 +69,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -131,7 +131,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Modo claro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -141,7 +141,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Modo escuro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -1049,7 +1049,7 @@
 
 <h2 id="o-que-e-selectfrommodel-sfm">O que é SelectFromModel (SFM)?</h2>
 <p>SelectFromModel é uma técnica de seleção de recursos que utiliza os pesos de importância atribuídos aos recursos por um modelo treinado. É comumente usada com modelos que atribuem importância aos recursos, como árvores de decisão e modelos lineares regularizados. Essa técnica seleciona os recursos com importâncias (ou coeficientes) maiores do que o valor de limiar especificado.<br /></p>
-<p>Apesar ambas as técnicas RFE e SFM o buscarem o mesmo objetivo, o RFE remove recursos menos significativos em iterações. Basicamente, ele primeiro remove alguns recursos que não são importantes e depois ajusta e remove novamente e ajusta. Ele repete esta iteração até atingir um número adequado de recursos. Já o SelectFromModel é um pouco menos robusto, pois apenas remove recursos menos importantes com base em um limite fornecido como parâmetro.</p>
+<p>Apesar DE ambas as técnicas, RFE e SFM, buscarem o mesmo objetivo, o RFE remove recursos menos significativos em iterações. Basicamente, ele primeiro remove alguns recursos que não são importantes e depois ajusta, remove e, novamente, ajusta. Ele repete esta iteração até atingir um número adequado de recursos. Já o SelectFromModel é um pouco menos potente, pois apenas remove recursos menos importantes com base em um limite fornecido como parâmetro.</p>
 <p>SelectFromModel é útil quando queremos um método rápido e simples para reduzir a dimensionalidade do seu conjunto de dados.<br /></p>
 <h2 id="como-funciona">Como Funciona</h2>
 <p>A técnica realiza os seguintes passos:<br />
@@ -1057,14 +1057,14 @@
 2.  Obter os pesos ou importâncias das características a partir do modelo.<br />
 3.  Estabelecer um limite (por exemplo, a média das importâncias) para selecionar as características.<br />
 4.  Manter somente as características que têm uma importância acima desse limite.<br /><br />
-Esse limiar pode ser um valor absoluto definido pelo usuário ou pode ser derivado de uma estratégia como a mediana ou a média das
+Esse limiar pode ser um valor absoluto definido pelo usuário ou pode ser derivado de uma estratégia, como a mediana ou a média das
 importâncias dos recursos.<br /></p>
 <div class="admonition warning">
 <p class="admonition-title">Cuidados ao utilizar SelectFromModel</p>
 <p>•   Avalie a importância das características com cautela se o modelo base tiver um desempenho ruim.<br />
 •   Pode ser necessário experimentar diferentes modelos e limiares para encontrar a seleção ideal.<br />
 •   A seleção de características deve ser revalidada se o conjunto de dados ou o problema sofrer alterações significativas.<br />
-•   Limiar de Seleção: O SelectFromModel permite ajustar o limiar para a seleção de recursos, seja através de um valor fixo, um percentual, ou utilizando estatísticas baseadas em modelos específicos.<br />
+•   O SelectFromModel permite ajustar o limiar para a seleção de recursos, seja através de um valor fixo, um percentual, ou utilizando estatísticas baseadas em modelos específicos.<br />
 •   Estar ciente de que o limiar para seleção de características é arbitrário e pode precisar de ajuste fino.<br /></p>
 </div>
 <p><a class="md-button md-button--primary" href="https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/4_3_feature_selection.ipynb">Aplicação do SelectFromModel no Case</a></p>

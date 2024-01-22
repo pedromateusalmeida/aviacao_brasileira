@@ -69,7 +69,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -131,7 +131,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Modo claro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -141,7 +141,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Modo escuro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -1050,14 +1050,14 @@
 <h2 id="o-que-e-shap">O que é SHAP?</h2>
 <div style="text-align: justify">
 
-SHAP é uma abordagem de interpretação de modelo baseada na teoria dos jogos que atribui a cada característica um valor que representa sua importância na previsão de cada instância. Os valores SHAP são baseados nos valores de Shapley, um conceito da teoria dos jogos cooperativos que distribui a "recompensa" (ou seja, a previsão do modelo) entre os colaboradores (recursos) de forma justa. O Shap me foi apresentado como uma das 7 maravilhas do machine learning e passado os anos tenho que concordar, pois ainda é uma ferramenta muito viva na area de ciência de dados. Pessoalmetne falando sou encantado com a robustez do algoritmo. <br />
+SHAP é uma abordagem de interpretação de modelo baseada na teoria dos jogos, que atribui a cada característica um valor que representa sua importância na previsão de cada instância. Os valores SHAP são baseados nos valores de Shapley, um conceito da teoria dos jogos cooperativos que distribui a "recompensa" (ou seja, a previsão do modelo) entre os colaboradores (recursos) de forma justa. O Shap me foi apresentado como uma das sete maravilhas do machine learning e, passados os anos, tenho que concordar, pois ainda é uma ferramenta muito viva na área de ciência de dados. Pessoalmente falando, sou encantado com a robustez do algoritmo. <br />
 </div>
 
 <h2 id="como-funciona">Como Funciona</h2>
 <div style="text-align: justify">
 A interpretação do modelo com SHAP envolve os seguintes passos:<br />
-1.Para uma dada instância, o modelo faz uma previsão usando todas as características.<br />
-2.Subconjuntos de características são sistematicamente "desligados" (simulando a ausência de informações), e a previsão é feita sem
+1. Para uma dada instância, o modelo faz uma previsão usando todas as características.<br />
+2. Subconjuntos de características são sistematicamente "desligados" (simulando a ausência de informações), e a previsão é feita sem
 eles. <br />
 3. O impacto de cada característica na mudança da previsão em relação à previsão base (a previsão média para o conjunto de dados) é calculado. Este impacto é o valor SHAP para a característica naquela instância.<br />
 4.  Todos os valores possíveis de subconjuntos de características são considerados para calcular o valor SHAP final para cada característica, o que garante uma distribuição justa e consistente de importância entre as características.<br /><br />
@@ -1066,12 +1066,12 @@ O valores SHAP positivos indicam que a característica aumentou a previsão, enq
 </div>
 
 <div class="admonition warning">
-<p class="admonition-title">O calcular o shap demanda recurso computacional</p>
+<p class="admonition-title">Calcular o shap demanda recurso computacional</p>
 </div>
 <div style="text-align: justify">
 O Shap é uma ótima ferramenta para interpretar métricas locais e globais do modelo. Baseia-se em uma base teórica sólida (valores de Shapley), garantindo justiça e consistência. E ainda é versátil, pois é aplicável a qualquer modelo de Machine Learning, sendo considerado modelo-agnóstico. Os valores SHAP podem ser facilmente visualizados e interpretados através de gráficos de força, gráficos de resumo, entre outros.<br /><br />
 
-Porém como mencionado anteriormente é um calculo computacionalmente intensivo, especialmente para modelos com um grande número de características e dados e pode ser desafiador para modelos com interações complexas entre as características.<br />
+Porém, como mencionado anteriormente, é um cálculo computacionalmente intensivo, especialmente para modelos com um grande número de características e dados e pode ser desafiador para modelos com interações complexas entre as características.<br />
 </div>
 
 <div class="admonition tips">

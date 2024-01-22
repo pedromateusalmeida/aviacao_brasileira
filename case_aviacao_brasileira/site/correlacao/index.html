@@ -69,7 +69,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -131,7 +131,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Modo claro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -141,7 +141,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Modo escuro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -1117,9 +1117,9 @@
 <div style="text-align: justify">
 A Análise de Correlação é uma técnica estatística que avalia como as variáveis estão relacionadas entre si. Em termos de seleção de recursos, ela é usada para identificar características que têm forte correlação com a variável alvo. <br /><br />
 
-O coeficiente de correlação (Pearson, Spearman ou Kendall) é calculado entre cada característica e a variável alvo. Os resultados de alta correlação (positiva ou negativa) com a variável alvo são consideradas importantes. A técnica pode é utilizada para identifica multicolinearidade, se há redundância nas caractéristicas, se são relevantes, além de tudo é uma técnica simples e fácil de ser utilizada. <br /><br />
+O coeficiente de correlação (Pearson, Spearman ou Kendall) é calculado entre cada característica e a variável alvo. Os resultados de alta correlação (positiva ou negativa) com a variável alvo são consideradas importantes. A técnica pode ser utilizada para identificar multicolinearidade, se há redundância nas caractéristicas, se são relevantes; além disso, é uma técnica simples e fácil de ser utilizada. <br /><br />
 
-Existem limitações na correlação que é o fato dela só captar relações lineares entre as variáveis, outros padrões ela não é capaz de identificar. Abaixo temos um gráfico entre duas variáveis X e Y, existe uma correlação entre elas, porém não linear isso não seria captado.<br />
+Existem limitações na correlação, como o fato dela só captar relações lineares entre as variáveis, outros padrões ela não é capaz de identificar. Abaixo, temos um gráfico entre duas variáveis X e Y, existe uma correlação entre elas, porém não linear, isso não seria captado.<br />
 </div>
 <p><center>
 <a href="../correlacao_nao_linear.png?data-lightbox=" title="image-1&quot; data-title=&quot;My caption"><img alt="Image title" src="../correlacao_nao_linear.png" /></a>
@@ -1138,19 +1138,19 @@ O coeficiente de correlação de Pearson é uma medida estatística que quantifi
 
 <h3 id="como-funciona-o-teste-de-correlacao-de-pearson">Como Funciona o Teste de Correlação de Pearson</h3>
 <div style="text-align: justify">
-<strong>Cálculo do Coeficiente:</strong> O coeficiente de Pearson (denotado como r) varia entre -1 e 1. Um valor de r = 1 indica uma correlação positiva perfeita, r = -1 indica uma correlação negativa perfeita, e r = 0 significa que não há correlação linear.<br />
-<strong>Fórmula:</strong> O coeficiente de Pearson é calculado como a covariância das variáveis dividida pelo produto dos seus desvios padrão.<br />
-<strong>Significância Estatística:</strong> Testes estatísticos podem ser usados para avaliar se o coeficiente de correlação é significativamente diferente de zero, indicando uma relação linear significativa.<br />
+<strong>Cálculo do Coeficiente:</strong> O coeficiente de Pearson (denotado como r) varia entre -1 e 1. Um valor de r = 1 indica uma correlação positiva perfeita, r = -1 indica uma correlação negativa perfeita, e r = 0 significa que não há correlação linear.<br /><br />
+<strong>Fórmula:</strong> O coeficiente de Pearson é calculado como a covariância das variáveis dividida pelo produto dos seus desvios padrão.<br /><br />
+<strong>Significância Estatística:</strong> Testes estatísticos podem ser usados para avaliar se o coeficiente de correlação é significativamente diferente de zero, indicando uma relação linear significativa.<br /><br />
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Dicas</p>
-<p>•   rXY é uma estatística adimensional(semunidadede medida);<br />
-•   rXY é apropriadoquandoX e Y sãovariáveisquantitativas;<br />
-•   rXY é o mesmoquer YX(rótulosX e Y intercambiáveis);<br />
+<p>•   rXY é uma estatística adimensional (sem unidade de medida);<br />
+•   rXY é a propriado quando X e Y são variáveis quantitativas;<br />
+•   rXY é o mesmoquer YX (rótulosX e Y intercambiáveis);<br />
 •   Pode ser influenciado por valores atípicos.<br /></p>
 </div>
 <div style="text-align: justify">
-O sinal do coeficiente de correlação linear de Pearson afeta diretamente o desenho do gráfico. Abaixo um temos um exemplo dos sinais e qual é a sua localização plano cartesiano de X e Y.<br />
+O sinal do coeficiente de correlação linear de Pearson afeta diretamente o desenho do gráfico. Abaixo, um exemplo dos sinais e de qual é a sua localização no plano cartesiano de X e Y.<br />
 </div>
 
 <div class="admonition danger">
@@ -1163,9 +1163,9 @@ Fonte: Material da pós graduação da UFMG.
 </center></p>
 <h3 id="quando-utilizar">Quando utilizar?</h3>
 <div style="text-align: justify">
-<strong>Dados Contínuos:</strong> Adequado para dados quantitativos contínuos.<br />
-<strong>Relações Lineares:</strong> Utilizado quando se suspeita que a relação entre as variáveis é linear.<br />
-<strong>Análise Exploratória:</strong> Comumente usado na análise exploratória de dados para identificar relações potenciais entre variáveis.<br />
+- Adequado para dados quantitativos contínuos.<br /><br />
+- Utilizado quando se suspeita que a relação entre as variáveis é linear.<br /><br />
+- Comumente usado na análise exploratória de dados para identificar relações potenciais entre variáveis.<br />
 </div>
 
 <div class="admonition tip">
@@ -1177,7 +1177,7 @@ Fonte: Material da pós graduação da UFMG.
 </div>
 <h2 id="no-case">No case</h2>
 <div style="text-align: justify">
-No case foi utilizado a correlação de pearson na etapa da análise explortatória. Nesse primeiro momento ela foi utilizada com a finalidade de visualizar potenciais correlações entre as colunas. 
+Foi utilizada a Correlação de Pearson na etapa da análise explortatória. Nesse primeiro momento, ela foi utilizada com a finalidade de visualizar potenciais correlações entre as colunas. 
 </div>
 
 <p><a class="md-button md-button--primary" href="https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/3_2_analise_exploratoria.ipynb">Aplicação da correlação de pearson no Case</a></p>

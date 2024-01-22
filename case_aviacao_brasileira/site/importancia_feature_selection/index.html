@@ -69,7 +69,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -131,7 +131,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Modo claro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -141,7 +141,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Modo escuro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -1048,7 +1048,7 @@
   <h1>Importância da etapa de feature selection</h1>
 
 <h2 id="tecnicas-de-selecao-de-variaveis">Técnicas de seleção de variaveis</h2>
-<p>A seleção de recursos, um passo crucial na preparação de dados para modelos de machine learning, envolve identificar as características mais relevantes para a previsão ou classificação em um conjunto de dados. Este processo não é apenas uma tarefa técnica, mas também uma oportunidade para o cientista de dados aplicar e demonstrar conhecimento estatístico e compreensão algorítmica profunda.<br /></p>
+<p>A seleção de recursos, um passo crucial na preparação de dados para modelos de machine learning, envolve identificar as características mais relevantes para a previsão ou classificação em um conjunto de dados. Este processo é uma tarefa técnica e também uma oportunidade para um cientista de dados aplicar e demonstrar conhecimento estatístico e compreensão algorítmica profunda.<br /></p>
 <div class="admonition tip">
 <p class="admonition-title">Por que a seleção de recursos é crucial?</p>
 <ul>
@@ -1060,19 +1060,19 @@
 </ul>
 </div>
 <h2 id="desmistificando-o-processo">Desmistificando o processo</h2>
-<p>Seleção de recursos não é uma caixa preta, inclusive é o momento onde o cientista de dados tem para aplicar testes de hipóteses, outros conhecimentos aprofundados estatística e de reduzir o custo de treinar determinado modelo para organização. <br /><br /></p>
+<p>Seleção de recursos não é uma caixa preta, é o momento de um cientista de dados aplicar testes de hipóteses e outros conhecimentos aprofundados de estatística e de reduzir o custo de treinar determinado modelo para organização. <br /><br /></p>
 <p>Antes de tudo, é crucial entender os dados. A EDA revela insights iniciais, como a distribuição, a variação e a relação potencial das características com a variável de resposta. Dependendo da natureza dos dados (categóricos, contínuos) e do problema (classificação, regressão), diferentes técnicas são aplicadas. Isso pode variar desde métodos estatísticos básicos, como testes de correlação, até algoritmos mais avançados, como métodos baseados em modelos de machine learning.<br /><br /></p>
-<p>A seleção de recursos não é um processo único e definitivo. Requer avaliação constante e ajustes, muitas vezes iterativos, para encontrar o equilíbrio ideal entre simplicidade do modelo e poder preditivo. O impacto da seleção de recursos deve ser validado através de métricas de desempenho do modelo, como precisão, recall e AUC. Técnicas de validação cruzada são cruciais para garantir que o modelo generaliza bem para novos dados.<br /><br /></p>
+<p>A seleção de recursos não é um processo único e definitivo. Requer avaliação constante e ajustes, muitas vezes interativos, para encontrar o equilíbrio ideal entre simplicidade do modelo e poder preditivo. O impacto da seleção de recursos deve ser validado através de métricas de desempenho do modelo, como precisão, recall e AUC. Técnicas de validação cruzada são cruciais para garantir que o modelo generaliza bem para novos dados.<br /><br /></p>
 <div class="admonition warning">
 <p class="admonition-title">Cuidados</p>
 <ul>
-<li>Em alguns casos, modelos mais complexos com mais recursos podem ter melhor desempenho, mas são menos interpretáveis.<br /></li>
+<li>Em alguns casos, modelos mais complexos, com mais recursos, podem ter melhor desempenho, mas são menos interpretáveis.<br /></li>
 <li>Uma seleção de recursos inadequada pode aumentar o viés (subajuste) ou a variância (sobreajuste) do modelo.<br /></li>
 <li>O conhecimento especializado do domínio é inestimável na interpretação dos dados e na compreensão da relevância das características.<br /><br /></li>
 </ul>
 </div>
 <h2 id="conclusao">Conclusão</h2>
-<p>A seleção de recursos é onde a arte encontra a ciência no campo do machine learning. Requer uma combinação de rigor estatístico, intuição analítica, e uma compreensão profunda tanto dos dados quanto do problema em questão. Para os praticantes, novatos ou experientes, dominar essa etapa é fundamental para construir bons modelos, que sejam eficientes e interpretáveis.<br /></p>
+<p>A seleção de recursos é onde a arte encontra a ciência no campo do machine learning. Requer uma combinação de rigor estatístico, intuição analítica e uma compreensão profunda tanto dos dados quanto do problema em questão. Para praticantes, novatos ou experientes, dominar essa etapa é fundamental para construir bons modelos que sejam eficientes e interpretáveis.<br /></p>
 
 
 

@@ -33,7 +33,7 @@ A análise de componentes realiza combinações lineares das variáveis originai
     • O PCA é sensível a outliers, que podem distorcer a direção dos componentes principais.<br />
     • A escolha do número de componentes a serem mantidos deve ser feita com base na quantidade de variação que se deseja capturar.<br />
     • Em contextos supervisionados, é importante usar o PCA de maneira que não incorpore informações do conjunto de teste durante o treinamento.<br />
-    • Variação Explicada: A proporção de variação explicada por cada componente principal é uma peça-chave para decidir quantos componentes reter.<br />
+    • A proporção de variação explicada por cada componente principal é uma peça-chave para decidir quantos componentes reter.<br />
     • A perda de informação pode ocorrer se um número muito limitado de componentes for selecionado.<br />
 
 ## No case

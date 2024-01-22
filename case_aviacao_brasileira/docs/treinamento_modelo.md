@@ -17,7 +17,7 @@ Codificação de Características: Utilização de codificação one-hot para tr
 4 - Treinamento<br />
 Modelo Utilizado: XGBoost (Extreme Gradient Boosting).<br />
 !!! info "Para mais informações sobre o funcionamento XGBoost acesse:"
-    (Recomendo fortemente os dois primeiros vídeos)
+    (Recomendo fortemente os dois primeiros vídeos)<br />
     - [Understanding XGBoost - A Comprehensive Guide (YouTube Video)- Parte 1](https://www.youtube.com/watch?v=OtD8wVaFm6E)<br />
     - [XGBoost in Python from Start to Finish (YouTube Video) - Parte 2](https://www.youtube.com/watch?v=8b1JEDvenQU)<br />
     - [XGBoost Explained (Kaggle) (YouTube Video) - Parte 3](https://www.youtube.com/watch?v=ZVFeW798-2I)<br />

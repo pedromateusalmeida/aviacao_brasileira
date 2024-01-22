@@ -9,10 +9,10 @@ A Importância de Permutação envolve os seguintes passos:<br />
 4.	O processo é repetido para todas as características para obter uma medida de importância para cada uma.<br />
 
 
-Útil para modelos agnósticos é fácil de calcular e entender. E não demanda saber ou fazer suposições sobre a distribuição dos dados ou a forma do modelo. Porém pode ser uma técnica computacionalmente cara, pois requer várias reavaliações do modelo e não leva em conta as interações entre características.
+Útil para modelos agnósticos é fácil de calcular e entender. E não demanda saber ou fazer suposições sobre a distribuição dos dados ou a forma do modelo. Porém, pode ser uma técnica computacionalmente cara, pois requer várias reavaliações do modelo e não leva em conta as interações entre características.
 <br />
 
-As características com importância alta são aquelas cuja permutação (embaralhamento) leva a uma piora no desempenho do modelo.Uma importância próxima de zero indica que a característica não tem um impacto significativo no desempenho do modelo. Por fim a Importância de Permutação é uma técnica que em conjunto com outras de interpretabilidade, como SHAP ou LIME, auxilia bastante no processo de análise e compreensão do modelo.<br />
+As características com importância alta são aquelas cuja permutação (embaralhamento) leva a uma piora no desempenho do modelo. Uma importância próxima de zero indica que a característica não tem um impacto significativo no desempenho do modelo. Por fim, a Importância de Permutação é uma técnica que, em conjunto com outras de interpretabilidade, como SHAP ou LIME, auxilia bastante no processo de análise e compreensão do modelo.<br />
 
 !!!warning "Cuidados"
     •	Assegure-se de usar um número suficiente de permutações para obter estimativas estáveis.<br />

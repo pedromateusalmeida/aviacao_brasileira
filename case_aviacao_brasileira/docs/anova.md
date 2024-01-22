@@ -1,10 +1,10 @@
 ## O que é ANOVA?
 <div style="text-align: justify">
-ANOVA (Análise de Variância) é uma técnica estatística usada para comparar as médias de duas ou mais amostras independentes, determinando se existe uma diferença significativa entre elas. Em termos de seleção de recursos, ANOVA pode ser usada para avaliar se a média de uma variável numérica com uma variável categórica. É uma técnica estatística que nos permite fazer o seguinte teste de hipóteses:<br />
+ANOVA (Análise de Variância) é uma técnica estatística usada para comparar as médias de duas ou mais amostras independentes, determinando se existe uma diferença significativa entre elas. Em termos de seleção de recursos, ANOVA pode ser usada para avaliar se a média de uma variável numérica com uma variável categórica. É uma técnica estatística que nos permite fazer o seguinte teste de hipóteses:<br /><br />
 H0: as médias de duas ou mais populações são iguais.<br />
 Ha: pelo menos uma das médias populacionais é diferente.<br /><br />
 
-Como objetivo do teste olhar variância de duas populações e ver se as médias dessas populações são iguais ou não. Para que isso aconteça é necessário:<br />
+O objetivo do teste é olhar a variância de duas populações e ver se as médias dessas populações são iguais ou não. Para que isso aconteça, é necessário:<br /><br />
 1 . A distribuição da variável em questão seja Gaussiana para todas as populações;<br />
 2. O desvio-padrão seja igual para todas as populações. Ou seja, se as populações tiverem médias diferentes, teremos:<br />
 </div>
@@ -63,12 +63,12 @@ Quando Não Usar: Não use ANOVA se suas variáveis são dependentes, se tem men
 <div style="text-align: justify">
 ANOVA testa a hipótese nula de que todas as médias de grupo são iguais contra a hipótese alternativa de que pelo menos uma média de grupo é diferente. Calcula a variância dentro dos grupos (variabilidade devido ao erro) e a variância entre os grupos (variabilidade devido ao efeito real). A razão dessas variâncias (F-ratio) é usada para determinar se as diferenças entre as médias são significativas.<br /><br />
 
-O teste ANOVA permite a avaliar a influência variáveis categóricas sobre uma variável contínua dois grupos ou mais grupos simultaneamente e ele é robusto contra pequenos desvios da normalidade na distribuição dos dados. Porém é um teste que pressupõe que os dados de cada grupo são normalmente distribuídos e têm variações iguais (homocedasticidade), se é robusto para pequenos desvios se mostra sensível para presença de outliers. <br />
+O teste ANOVA permite avaliar a influência de variáveis categóricas sobre uma variável contínua, dois grupos ou mais grupos simultaneamente, e ele é robusto contra pequenos desvios da normalidade na distribuição dos dados. Porém, é um teste que pressupõe que os dados de cada grupo são normalmente distribuídos e têm variações iguais (homocedasticidade). É robusto para pequenos desvios, mas se mostra sensível para presença de outliers. <br /><br /><br />
 </div>
 
 # No Case
 <div style="text-align: justify">
-No contexto do case foi utilizado a variável dependente categórica status_do_voo (Pontual/Atrasado) e as variáveis númericas de meteorologia, por exemplo, precipitação, temperatura, umidade, pressão. 
+No contexto do case, foi utilizada a variável dependente categórica status_do_voo (Pontual/Atrasado) e as variáveis númericas de meteorologia, por exemplo, precipitação, temperatura, umidade, pressão. 
 </div>
 
 [Aplicação do ANOVA no Case](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/4_3_feature_selection.ipynb){ .md-button .md-button--primary }

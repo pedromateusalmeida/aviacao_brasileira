@@ -17,12 +17,12 @@ Quando interpretamos a importância baseada em modelo, devemos olhar para as car
     •	A presença de características correlacionadas pode distorcer a importância real e deve ser tratada com cautela.<br />
     •	Não assuma que as características menos importantes não têm nenhum valor; elas podem ser importantes em modelos diferentes.<br />
 
-## Prós e Contras
-### Prós
+
+## Prós
 •	Fornecida diretamente pelo modelo, sem necessidade de cálculos adicionais.<br />
 •	Leva em conta a interação entre recursos, já que a árvore de decisão considera várias variáveis ao fazer divisões.<br />
 •	Pode ser calculada rapidamente e é intuitiva.<br />
-### Contras
+## Contras
 •	Específica para modelos baseados em árvores e pode não se generalizar para outros tipos de modelos.<br />
 •	Em modelos de árvores complexos ou florestas aleatórias, a importância pode favorecer características com mais categorias ou valores numéricos contínuos.<br />
 •	Pode ser enganosa se houver variáveis correlacionadas, pois a importância pode ser distribuída entre elas.<br />

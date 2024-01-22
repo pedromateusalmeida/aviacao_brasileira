@@ -5,7 +5,7 @@ O Predictive Power Score (PPScore) é uma métrica alternativa à correlação q
 
 <center>
 [![Image title](PPS_01_png.png)](PPS_01_png.png?data-lightbox="image-1" data-title="My caption")<br />
-Fig: Exemplos padrões não lineares
+Fig: Exemplos de padrões não lineares
 </center>
 
 ### Como Funciona

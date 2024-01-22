@@ -12,7 +12,9 @@ edit_uri: "https://github.com/pedromateusalmeida/aviacao_brasileira"
 theme:
   name: material
   language: pt-BR
-  copyright: false 
+  copyright: True 
+  font:
+    text: Roboto
   favicon: favicon.ico
   icon:
     logo: material/database-eye
@@ -32,13 +34,13 @@ theme:
     - stylesheets/extra.css
   palette:
     - media: "(prefers-color-scheme: light)" 
-      scheme: default
+      scheme: slate
       primary: light blue
       toggle:
         icon: material/toggle-switch
         name:  Modo claro
     - media: "(prefers-color-scheme: dark)" 
-      scheme: slate
+      scheme: default
       primary: light blue
       toggle:
         icon: material/toggle-switch-off-outline

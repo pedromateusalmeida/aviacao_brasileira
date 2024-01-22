@@ -3,9 +3,9 @@
 <div style="text-align: justify">
 A Análise de Correlação é uma técnica estatística que avalia como as variáveis estão relacionadas entre si. Em termos de seleção de recursos, ela é usada para identificar características que têm forte correlação com a variável alvo. <br /><br />
 
-O coeficiente de correlação (Pearson, Spearman ou Kendall) é calculado entre cada característica e a variável alvo.	Os resultados de alta correlação (positiva ou negativa) com a variável alvo são consideradas importantes. A técnica pode é utilizada para identifica multicolinearidade, se há redundância nas caractéristicas, se são relevantes, além de tudo é uma técnica simples e fácil de ser utilizada. <br /><br />
+O coeficiente de correlação (Pearson, Spearman ou Kendall) é calculado entre cada característica e a variável alvo.	Os resultados de alta correlação (positiva ou negativa) com a variável alvo são consideradas importantes. A técnica pode ser utilizada para identificar multicolinearidade, se há redundância nas caractéristicas, se são relevantes; além disso, é uma técnica simples e fácil de ser utilizada. <br /><br />
 
-Existem limitações na correlação que é o fato dela só captar relações lineares entre as variáveis, outros padrões ela não é capaz de identificar. Abaixo temos um gráfico entre duas variáveis X e Y, existe uma correlação entre elas, porém não linear isso não seria captado.<br />
+Existem limitações na correlação, como o fato dela só captar relações lineares entre as variáveis, outros padrões ela não é capaz de identificar. Abaixo, temos um gráfico entre duas variáveis X e Y, existe uma correlação entre elas, porém não linear, isso não seria captado.<br />
 </div>
 <center>
 [![Image title](correlacao_nao_linear.png)](correlacao_nao_linear.png?data-lightbox="image-1" data-title="My caption")
@@ -25,18 +25,18 @@ O coeficiente de correlação de Pearson é uma medida estatística que quantifi
 
 ### Como Funciona o Teste de Correlação de Pearson
 <div style="text-align: justify">
-<strong>Cálculo do Coeficiente:</strong> O coeficiente de Pearson (denotado como r) varia entre -1 e 1. Um valor de r = 1 indica uma correlação positiva perfeita, r = -1 indica uma correlação negativa perfeita, e r = 0 significa que não há correlação linear.<br />
-<strong>Fórmula:</strong> O coeficiente de Pearson é calculado como a covariância das variáveis dividida pelo produto dos seus desvios padrão.<br />
-<strong>Significância Estatística:</strong> Testes estatísticos podem ser usados para avaliar se o coeficiente de correlação é significativamente diferente de zero, indicando uma relação linear significativa.<br />
+<strong>Cálculo do Coeficiente:</strong> O coeficiente de Pearson (denotado como r) varia entre -1 e 1. Um valor de r = 1 indica uma correlação positiva perfeita, r = -1 indica uma correlação negativa perfeita, e r = 0 significa que não há correlação linear.<br /><br />
+<strong>Fórmula:</strong> O coeficiente de Pearson é calculado como a covariância das variáveis dividida pelo produto dos seus desvios padrão.<br /><br />
+<strong>Significância Estatística:</strong> Testes estatísticos podem ser usados para avaliar se o coeficiente de correlação é significativamente diferente de zero, indicando uma relação linear significativa.<br /><br />
 </div>
 !!!tip "Dicas"
-    •	rXY é uma estatística adimensional(semunidadede medida);<br />
-    •	rXY é apropriadoquandoX e Y sãovariáveisquantitativas;<br />
-    •	rXY é o mesmoquer YX(rótulosX e Y intercambiáveis);<br />
+    •	rXY é uma estatística adimensional (sem unidade de medida);<br />
+    •	rXY é a propriado quando X e Y são variáveis quantitativas;<br />
+    •	rXY é o mesmoquer YX (rótulosX e Y intercambiáveis);<br />
     •	Pode ser influenciado por valores atípicos.<br />
 
 <div style="text-align: justify">
-O sinal do coeficiente de correlação linear de Pearson afeta diretamente o desenho do gráfico. Abaixo um temos um exemplo dos sinais e qual é a sua localização plano cartesiano de X e Y.<br />
+O sinal do coeficiente de correlação linear de Pearson afeta diretamente o desenho do gráfico. Abaixo, um exemplo dos sinais e de qual é a sua localização no plano cartesiano de X e Y.<br />
 </div>
 
 !!!danger "Cuidados"
@@ -49,9 +49,9 @@ Fonte: Material da pós graduação da UFMG.
 
 ### Quando utilizar?
 <div style="text-align: justify">
-<strong>Dados Contínuos:</strong> Adequado para dados quantitativos contínuos.<br />
-<strong>Relações Lineares:</strong> Utilizado quando se suspeita que a relação entre as variáveis é linear.<br />
-<strong>Análise Exploratória:</strong> Comumente usado na análise exploratória de dados para identificar relações potenciais entre variáveis.<br />
+- Adequado para dados quantitativos contínuos.<br /><br />
+- Utilizado quando se suspeita que a relação entre as variáveis é linear.<br /><br />
+- Comumente usado na análise exploratória de dados para identificar relações potenciais entre variáveis.<br />
 </div>
 
 
@@ -63,7 +63,7 @@ Fonte: Material da pós graduação da UFMG.
 
 ## No case
 <div style="text-align: justify">
-No case foi utilizado a correlação de pearson na etapa da análise explortatória. Nesse primeiro momento ela foi utilizada com a finalidade de visualizar potenciais correlações entre as colunas. 
+Foi utilizada a Correlação de Pearson na etapa da análise explortatória. Nesse primeiro momento, ela foi utilizada com a finalidade de visualizar potenciais correlações entre as colunas. 
 </div>
 
 [Aplicação da correlação de pearson no Case](https://github.com/pedromateusalmeida/aviacao_brasileira/blob/main/scripts_v2/3_2_analise_exploratoria.ipynb){ .md-button .md-button--primary }

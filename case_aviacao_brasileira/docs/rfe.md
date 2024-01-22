@@ -11,7 +11,7 @@ O RFE realiza os seguintes passos:<br />
 4.	Refaz o modelo com as características restantes.<br />
 5.	Repete os passos 2 a 4 até que o número desejado de características seja atingido.<br /><br />
 
-Alguns destaque merece ser feito sobre o RFE, ele é um algoritmo que pode ser computacionalmente intensivo, principalmente com um grande número de características. A escolha de recursos é feita com base no modelo escolhido para o RFE, o que significa que a seleção é específica para esse modelo e pode não ser ideal para outros modelos.	A remoção de recursos é um processo irreversível para o modelo específico e pode descartar características que poderiam ser úteis em combinações diferentes ou sob uma perspectiva diferente.<br />
+Algum destaque merece ser feito sobre o RFE, ele é um algoritmo que pode ser computacionalmente intensivo, principalmente com um grande número de características. A escolha de recursos é feita com base no modelo escolhido para o RFE, o que significa que a seleção é específica para esse modelo e pode não ser ideal para outros modelos.	A remoção de recursos é um processo irreversível para o modelo específico e pode descartar características que poderiam ser úteis em combinações diferentes ou sob uma perspectiva diferente.<br />
 
 Diversos modelos de machine learning são compativeis com o uso do RFE, ele pode ser utilizado com qualquer modelo que forneça alguma forma de importância de características, como árvores de decisão, modelos lineares regularizados, entre outros.<br />
 </div>
@@ -19,13 +19,13 @@ Diversos modelos de machine learning são compativeis com o uso do RFE, ele pode
 ## Interpretação
 
 <div style="text-align: justify">
-Ao interpretar os resultados do RFE, é essencial considerar a importância das características está relacionada ao modelo específico utilizado para o RFE. Outro destaque é para as características removidas cedo no processo são geralmente menos importantes, mas isso pode variar com a mudança do modelo ou dos hiperparâmetros. 
+Ao interpretar os resultados do RFE, é essencial considerar que a importância das características está relacionada ao modelo específico utilizado para o RFE. Outro destaque é que as características removidas cedo no processo são geralmente menos importantes, mas isso pode variar com a mudança do modelo ou dos hiperparâmetros. 
 </div>
 !!!tip "Sempre valide a performance do modelo após a seleção de recursos para garantir que a redução não afetou negativamente a capacidade preditiva."
 !!!warning "Cuidados ao utilizar RFE"
     •	Garanta que o modelo está bem ajustado antes de usar RFE, pois um modelo mal ajustado pode levar à remoção de características importantes.<br />
     •	Considere a correlação entre as características, pois o RFE não leva em conta a multicolinearidade.<br />
-    •	A validação cruzada deve ser usada durante o RFE para garantir que a seleção de recursos seja robusta.<br />
+    •	A validação cruzada deve ser usada durante o RFE para garantir que a seleção de recursos seja boa.<br />
 
 
 

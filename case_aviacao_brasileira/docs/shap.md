@@ -5,6 +5,8 @@
 SHAP é uma abordagem de interpretação de modelo baseada na teoria dos jogos, que atribui a cada característica um valor que representa sua importância na previsão de cada instância. Os valores SHAP são baseados nos valores de Shapley, um conceito da teoria dos jogos cooperativos que distribui a "recompensa" (ou seja, a previsão do modelo) entre os colaboradores (recursos) de forma justa. O Shap me foi apresentado como uma das sete maravilhas do machine learning e, passados os anos, tenho que concordar, pois ainda é uma ferramenta muito viva na área de ciência de dados. Pessoalmente falando, sou encantado com a robustez do algoritmo. <br />
 </div>
 
+!!!info "Diferença entre variavel global e local"
+
 ## Como Funciona
 
 <div style="text-align: justify">
@@ -45,3 +47,5 @@ Porém, como mencionado anteriormente, é um cálculo computacionalmente intensi
 - [Interpretable Machine Learning: A Guide for Making Black Box Models Explainable - SHAPLEY Values](https://christophm.github.io/interpretable-ml-book/shapley.html)
 - [SHAP Documentation: API Examples](https://shap.readthedocs.io/en/latest/api_examples.html)
 - [SHAP Documentation: Tabular Examples](https://shap.readthedocs.io/en/latest/tabular_examples.html)
+- [SHAP: O que é e por que usar](https://medium.com/big-data-blog/shap-o-que-%C3%A9-e-por-que-usar-6b01d37ae592)
+
